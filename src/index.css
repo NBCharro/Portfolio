@@ -1,3 +1,34 @@
+/* Colors
+Hydrogen: #FFFFFF
+Helium: #D9FFFF
+Palette:
+#000000
+#ffffff
+#d9ffff
+#48cecb
+#246766
+#BAE8DB
+#CCFFE2
+#BADCE8
+#CCE4FF
+#ADCCCC
+#468080
+#8CFFFF
+#FFF5BF
+#B38B74
+#FFE7D9
+#456D99
+#6C8080
+#A3BFBF
+#C3E6E6
+Elegidos:
+#C3E6E6
+#A3BFBF
+#CCFFE2
+#000000
+#D9FFFF
+ */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +36,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #D9FFFF
 }
 
 code {
