@@ -66,3 +66,15 @@
     -webkit-animation: move-background 50s linear infinite;
     animation: move-background 50s linear infinite;
 }
+
+.idioma {
+    text-align: right;
+    cursor: pointer;
+}
+.active {
+    color: #c3e6e6;
+    font-size: 1.1em;
+}
+.noactive {
+    color: #6c757d;
+}

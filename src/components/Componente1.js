@@ -5,6 +5,8 @@ import classes from './Componente1.module.css';
 
 const Componente1 = (props) => {
     const [pulsado, setPulsado] = useState(false);
+    // const [textoArray, setTextoArray] = useState([]);
+
     const containerVariants = {
         to: {
             width: 100,
@@ -13,15 +15,24 @@ const Componente1 = (props) => {
         },
         exit: { x: '-100vw', transition: { ease: 'easeInOut', duration: 1 } },
     };
-    const buttonVariants = {
-        to: {
-            backgroundColor: 'green',
-            transition: { duration: 3 },
-        },
-    };
     const buttonHandler = () => {
         setPulsado((prev) => !prev);
+        console.log(pulsado);
+        // setTextoArray([]);
     };
+    // const texto = 'Hola, soy Nelson Blanco. Soy desarrollador frontend.';
+    // useEffect(() => {
+    //     let timer = 0;
+    //     const reloj = setInterval(function () {
+    //         setTextoArray((prev) => {
+    //             return [prev, texto.split('')[timer]];
+    //         });
+    //         timer++;
+    //         if (timer === texto.split('').length) {
+    //             clearInterval(reloj);
+    //         }
+    //     }, 10);
+    // }, [pulsado]);
     return (
         <Fondo>
             <motion.div
@@ -31,31 +42,19 @@ const Componente1 = (props) => {
                 animate="to"
             >
                 {!props.pulsado && (
-                    <div className={classes.parrafo}>
+                    <span className={classes.parrafo}>
                         Hola, soy
-                        <p className={classes.nombre}>Nelson Blanco</p> Soy un
-                        desarrollador web front-end
-                    </div>
+                        <p className={classes.nombre}>Nelson Blanco</p>
+                        Soy un desarrollador web front-end
+                    </span>
                 )}
             </motion.div>
-            <motion.button
-                className={classes.boton}
-                onClick={buttonHandler}
-                variants={pulsado && buttonVariants}
-                animate="to"
-            >
+            {/* <motion.div>{textoArray}</motion.div> */}
+            <motion.button className={classes.boton} onClick={buttonHandler}>
                 Acceder
             </motion.button>
-            <motion.div
-                className={classes.movible}
-                drag
-                dragConstraints={{
-                    left: 200,
-                    top: 0,
-                    right: 0,
-                    bottom: 200,
-                }}
-            />
+            <motion.div className={classes.movible} drag />
+            <motion.div className={classes.movible} drag />
         </Fondo>
     );
 };
