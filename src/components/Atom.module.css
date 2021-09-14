@@ -1,4 +1,151 @@
-.container {
+.contenedor {
+    /* margin-top: 300px; */
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    /* border: 2px solid blue; */
+}
+
+/* NUCLEO */
+.proton,
+.proton2 {
+    background-color: #d9ffff;
+    border: 3px solid purple;
+    box-shadow: 0 0 30px white;
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.proton {
+    left: calc(50% - 75px);
+    top: calc(50% - 50px);
+}
+.proton2 {
+    left: calc(50% - 25px);
+    top: calc(50% - 50px);
+}
+.neutron,
+.neutron2 {
+    background-color: #d9ffff;
+    border: 3px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.neutron {
+    left: calc(50% - 50px);
+    top: calc(50% - 60px);
+}
+.neutron2 {
+    left: calc(50% - 45px);
+    top: calc(50% - 40px);
+}
+
+/* ORBITAS */
+.electron,
+.electron2 {
+    background: #d9ffff;
+    border: 3px solid purple;
+    box-shadow: 0 0 20px white;
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+.electron {
+    left: calc(50% - 175px);
+    top: calc(50% - 25px);
+}
+.electron2 {
+    left: calc(50% + 125px);
+    top: calc(50% - 25px);
+}
+.electronOrbita {
+    animation: orbit 36.5s linear infinite;
+    -webkit-animation: orbit 36.5s linear infinite;
+    height: 400px;
+    width: 400px;
+    /* left: 50px;
+    top: 50px; */
+}
+.electronOrbitaAnimacionPausada {
+    animation-play-state: paused;
+}
+.estela {
+    width: 310px;
+    height: 310px;
+    /* border: 10px solid grey; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    rotate: 25;
+}
+
+/* HOVER */
+.electron[direccion]:after,
+.electron2[direccion]:after {
+    content: attr(direccion);
+    transform: translate(246 189);
+    color: black;
+    background-color: #c3e6e6;
+    border: 2px solid purple;
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+}
+.electron:hover,
+.electron2:hover {
+    cursor: pointer;
+    background-color: #00e8fc;
+    border-color: #c3e6e6;
+    box-shadow: 0 0 20px #00e8fc;
+}
+.electron[direccion]:hover:after,
+.electron2[direccion]:hover:after,
+.proton[direccion]:hover:after,
+.proton2[direccion]:hover:after {
+    content: attr(direccion);
+    color: red;
+    background-color: white;
+    border: 1px black solid;
+    box-shadow: 0 0 3px #ccc;
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+}
+.proton:hover,
+.proton2:hover {
+    cursor: pointer;
+    background-color: #00e8fc;
+    border-color: #c3e6e6;
+    box-shadow: 0 0 20px #00e8fc;
+}
+
+/* ANIMACION */
+@-webkit-keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Planeta */
+/* .container {
     height: 400px;
     left: calc(50% - 200px);
     position: absolute;
@@ -50,91 +197,4 @@
     width: 30px;
     right: 30px;
     top: 30px;
-}
-
-@-webkit-keyframes orbit {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes orbit {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.contenedor {
-    /* margin-top: 300px; */
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    /* top: calc(50% - 200px); */
-    /* left: calc(50% - 200px); */
-    border: 2px solid blue;
-}
-.proton,
-.proton2 {
-    background-color: yellow;
-    border: 3px solid blue;
-    box-shadow: 0 0 30px white;
-    border-radius: 50%;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-}
-.proton {
-    left: calc(50% - 75px);
-    top: calc(50% - 50px);
-}
-.proton2 {
-    left: calc(50% - 25px);
-    top: calc(50% - 50px);
-}
-.electron,
-.electron2 {
-    background: aqua;
-    border: 3px solid blue;
-    box-shadow: 0 0 20px white;
-    border-radius: 50%;
-    position: absolute;
-    height: 50px;
-    width: 50px;
-}
-.electron {
-    left: calc(50% - 175px);
-    top: calc(50% - 25px);
-}
-.electron2 {
-    left: calc(50% + 125px);
-    top: calc(50% - 25px);
-}
-.electronOrbita {
-    -webkit-animation: orbit 36.5s linear infinite;
-    animation: orbit 36.5s linear infinite;
-    height: 400px;
-    width: 400px;
-    /* left: 50px;
-    top: 50px; */
-}
-.estela {
-    width: 300px;
-    height: 300px;
-    border: 2px solid red;
-    border-radius: 50%;
-    box-sizing: border-box;
-    position: absolute;
-    top: calc(50% - 150px);
-    left: calc(50% - 150px);
-    rotate: 25;
-}
-.electron:hover ~ .electronOrbita {
-    animation-play-state: paused;
-}
-.electron:hover,
-.electron2:hover {
-    cursor: pointer;
-}
-.electron:hover ~ .estela {
-    border-color: yellow;
-}
+} */
