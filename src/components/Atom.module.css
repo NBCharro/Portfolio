@@ -1,5 +1,4 @@
 .contenedor {
-    /* margin-top: 300px; */
     height: 400px;
     width: 400px;
     position: absolute;
@@ -45,7 +44,7 @@
     top: calc(50% - 40px);
 }
 
-/* ORBITAS */
+/* ELECTRONES */
 .electron,
 .electron2 {
     background: #d9ffff;
@@ -55,6 +54,8 @@
     position: absolute;
     height: 50px;
     width: 50px;
+    animation: orbit 40s linear infinite reverse;
+    -webkit-animation: orbit 40s linear infinite reverse;
 }
 .electron {
     left: calc(50% - 175px);
@@ -65,20 +66,17 @@
     top: calc(50% - 25px);
 }
 .electronOrbita {
-    animation: orbit 36.5s linear infinite;
-    -webkit-animation: orbit 36.5s linear infinite;
+    animation: orbit 40s linear infinite;
+    -webkit-animation: orbit 40s linear infinite;
     height: 400px;
     width: 400px;
     /* left: 50px;
     top: 50px; */
 }
-.electronOrbitaAnimacionPausada {
-    animation-play-state: paused;
-}
 .estela {
     width: 310px;
     height: 310px;
-    /* border: 10px solid grey; */
+    border: 10px solid grey;
     border-radius: 50%;
     box-sizing: border-box;
     position: absolute;
@@ -88,21 +86,15 @@
 }
 
 /* HOVER */
-.electron[direccion]:after,
-.electron2[direccion]:after {
-    content: attr(direccion);
-    transform: translate(246 189);
-    color: black;
-    background-color: #c3e6e6;
-    border: 2px solid purple;
-    padding: 4px 8px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 2;
-}
 .electron:hover,
 .electron2:hover {
+    cursor: pointer;
+    background-color: #00e8fc;
+    border-color: #c3e6e6;
+    box-shadow: 0 0 20px #00e8fc;
+}
+.proton:hover,
+.proton2:hover {
     cursor: pointer;
     background-color: #00e8fc;
     border-color: #c3e6e6;
@@ -113,25 +105,21 @@
 .proton[direccion]:hover:after,
 .proton2[direccion]:hover:after {
     content: attr(direccion);
-    color: red;
-    background-color: white;
-    border: 1px black solid;
-    box-shadow: 0 0 3px #ccc;
+    color: black;
+    background-color: #c3e6e6;
+    border: 2px solid purple;
     padding: 4px 8px;
     position: absolute;
     left: 0;
     top: 100%;
     z-index: 2;
 }
-.proton:hover,
-.proton2:hover {
-    cursor: pointer;
-    background-color: #00e8fc;
-    border-color: #c3e6e6;
-    box-shadow: 0 0 20px #00e8fc;
-}
 
 /* ANIMACION */
+.AnimacionPausada {
+    animation-play-state: paused;
+}
+
 @-webkit-keyframes orbit {
     to {
         transform: rotate(360deg);
@@ -143,58 +131,3 @@
         transform: rotate(360deg);
     }
 }
-
-/* Planeta */
-/* .container {
-    height: 400px;
-    left: calc(50% - 200px);
-    position: absolute;
-    top: calc(50% - 200px);
-    width: 400px;
-}
-.container .sun {
-    background-color: yellow;
-    border-radius: 50%;
-    box-shadow: 0 0 30px white;
-    height: 100px;
-    left: 150px;
-    position: absolute;
-    top: 150px;
-    width: 100px;
-}
-.container .orbit {
-    border: solid;
-    border-color: white transparent transparent transparent;
-    border-radius: 50%;
-    border-width: 1px 1px 0 0;
-    box-sizing: border-box;
-    position: absolute;
-    transform: rotate(0deg);
-    transform-origin: center;
-}
-.container .orbit.earthOrbit {
-    -webkit-animation: orbit 36.5s linear infinite;
-    animation: orbit 36.5s linear infinite;
-    height: 300px;
-    left: 50px;
-    top: 50px;
-    width: 300px;
-}
-.container .orbit .globe {
-    border-radius: 50%;
-    position: absolute;
-}
-.container .orbit .globe.earth {
-    background: aqua;
-    height: 30px;
-    right: 30px;
-    top: 30px;
-    width: 30px;
-}
-.container .orbit .globe.earth2 {
-    background: green;
-    height: 30px;
-    width: 30px;
-    right: 30px;
-    top: 30px;
-} */

@@ -6,42 +6,54 @@ const Atom = (props) => {
     const animacionHandler = () => {
         setAnimacion((prev) => !prev);
     };
+    const enlace = (event) => {
+        props.direccion(event.target.attributes.direccion.nodeValue);
+    };
     return (
         <>
             <div className={classes.contenedor}>
                 <div
                     className={`${classes.electronOrbita} ${
-                        animacion && classes.electronOrbitaAnimacionPausada
+                        animacion && classes.AnimacionPausada
                     }`}
                 >
-                    <div className={classes.estela} />
+                    {/* <div className={classes.estela} /> */}
                     <div
-                        className={classes.electron}
+                        className={`${classes.electron} ${
+                            animacion && classes.AnimacionPausada
+                        }`}
                         onMouseEnter={animacionHandler}
                         onMouseLeave={animacionHandler}
-                        direccion="Inicio"
+                        direccion={props.idioma === 'es' ? 'Inicio' : 'Home'}
+                        onClick={enlace}
                     />
                     <div
-                        className={classes.electron2}
+                        className={`${classes.electron2} ${
+                            animacion && classes.AnimacionPausada
+                        }`}
                         onMouseEnter={animacionHandler}
                         onMouseLeave={animacionHandler}
-                        direccion="Contacto"
+                        direccion={
+                            props.idioma === 'es' ? 'Contacto' : 'Contact'
+                        }
+                        onClick={enlace}
                     />
                 </div>
                 <div className={classes.neutron} />
-                <div className={classes.proton} direccion="Proyectos" />
+                <div
+                    className={classes.proton}
+                    direccion={props.idioma === 'es' ? 'Proyectos' : 'Projects'}
+                    onClick={enlace}
+                />
                 <div className={classes.neutron2} />
-                <div className={classes.proton2} direccion="Skills" />
+                <div
+                    className={classes.proton2}
+                    direccion={
+                        props.idioma === 'es' ? 'Conocimientos' : 'Skills'
+                    }
+                    onClick={enlace}
+                />
             </div>
-            {/* <div className={classes.container}>
-                <div className={classes.sun}></div>
-                <div className={`${classes.orbit} ${classes.earthOrbit}`}>
-                    <div className={`${classes.globe} ${classes.earth}`}></div>
-                </div>
-                <div className={`${classes.orbit} ${classes.earthOrbit2}`}>
-                    <div className={`${classes.globe} ${classes.earth2}`}></div>
-                </div>
-            </div> */}
         </>
     );
 };
