@@ -1,0 +1,16 @@
+/* .iconos canvas[title]:hover:after {
+    content: attr(title);
+    color: black;
+    background-color: #c3e6e6;
+    border: 2px solid purple;
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+} */
+.iconos {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}

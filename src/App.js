@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Fondo from './components/Fondo';
 // import Atom from './components/Atom';
 // import Home from './components/Home';
-import Projects from './components/Projects';
-// import Skills from './components/Skills';
+// import Projects from './components/Projects';
+import Skills from './components/Skills';
 // import Contact from './components/Contact';
 
 function App() {
@@ -33,7 +33,8 @@ function App() {
                 {/* <Componente1 click={Handler} pulsado={clicked} /> */}
                 {/* <Home click={Handler} pulsado={clicked} idioma={idioma} /> */}
                 {/* <Atom idioma={idioma} direccion={direccion} /> */}
-                <Projects />
+                {/* <Projects /> */}
+                <Skills idioma={idioma} />
             </Fondo>
         </>
     );
