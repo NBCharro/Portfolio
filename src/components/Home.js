@@ -14,6 +14,8 @@ const Home = (props) => {
                     Hola, mi nombre es{' '}
                     <span className={classes.nombre}>{nombre}</span>.<br />
                     Soy un desarrollador web front-end.
+                    <br />
+                    Diseño interfaces interactivas centradas en humanos.
                 </div>
             );
         }
@@ -23,6 +25,7 @@ const Home = (props) => {
                     Hello, I'm <span className={classes.nombre}>{nombre}</span>.
                     <br />
                     I'm a front-end web developer.
+                    <br />I design interactive interfaces centered on humans.
                 </div>
             );
         }

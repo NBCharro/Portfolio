@@ -3,14 +3,18 @@
 }
 
 .texto {
-    width: 45%;
+    box-sizing: border-box;
+    width: 50%;
     height: 200px;
     border: 2px solid red;
-    margin-left: 2.5%;
+    /* margin-left: 2.5%; */
+    font-size: 1.5em;
     float: left;
 }
 .esfera {
-    width: 45%;
+    box-sizing: border-box;
+    width: 50%;
     border: 2px solid red;
-    margin-left: 2.5%;
+    /* margin-left: 2.5%; */
+    float: right;
 }

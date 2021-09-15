@@ -30,11 +30,28 @@ Elegidos:
 #000000
 #D9FFFF
  */
+/* Tipos de letra:
+Inconsolata => https://fonts.google.com/specimen/Inconsolata
+Rajdhani => https://fonts.google.com/specimen/Rajdhani
+Arvo => https://fonts.google.com/specimen/Arvo
+Exo 2 => https://fonts.google.com/specimen/Exo+2
+Xanh Mono => https://fonts.google.com/specimen/Xanh+Mono
+Trochut => https://fonts.google.com/specimen/Trochut
+Bungee Hairline => https://fonts.google.com/specimen/Bungee+Hairline
+Viaoda Libre => https://fonts.google.com/specimen/Viaoda+Libre
+Courier Prime => https://fonts.google.com/specimen/Courier+Prime
+ 
+ firma:
+ Shadows Into Light => https://fonts.google.com/specimen/Shadows+Into+Light
+ Satisfy => https://fonts.google.com/specimen/Satisfy
+ Indie Flower => https://fonts.google.com/specimen/Indie+Flower
+ Caveat => https://fonts.google.com/specimen/Caveat
+ Nothing You Could Do => https://fonts.google.com/specimen/Nothing+You+Could+Do
+
+ */
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #000000;

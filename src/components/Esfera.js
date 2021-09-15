@@ -23,6 +23,7 @@ const Esfera = () => {
         wheelZoom: false,
     };
     const iconos = [
+        // SVG, Progressive Enhancement, Responsive Web Design y Art-Direction
         'typescript',
         'javascript',
         'react',

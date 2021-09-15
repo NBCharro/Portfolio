@@ -3,17 +3,29 @@ import Esfera from './Esfera';
 import classes from './Skills.module.css';
 
 const Skills = (props) => {
-    let texto;
+    let texto = {};
     if (props.idioma !== 'es') {
-        texto = `I’m a front-end web developer with over a decade of experience. I work with agencies across the globe to create high performance & rich interactive websites that work across all platforms & devices. Although I'm very familiar with using frameworks, my websites are primarily hand-coded using HTML5, CSS3, SVG & JavaScript. With a strong emphasis on "Progressive Enhancement", I look for creative ways to push the boundaries of website front-end code without compromising on browser support and performance. In a quest for always keeping myself updated, I read books and attend conferences & meetups.`;
+        texto = {
+            parrafo1: `I'm passionate about creating software that improves the lives of those around me, so I build interactive websites that run on all platforms and devices. The main area of my interest is front-end. My passion for programming started with the Motorola V300 by creating small lines of code to set my favorite songs as a ringtone.`,
+            parrafo2: `With web standards constantly evolving, it's essential to keep up with the latest and greatest in front-end code, whether it's tools, design patterns or “best practices”. The most important thing for me in my job is to understand the client's tasks, and deliver the most relevant solution.`,
+            parrafo3: `I am a curious person, who is passionate about programming, nature, dogs, books, and movies. I love to stare at a not-so-bright screen while I reach the solution to the code that has been giving me compilation errors for days.`,
+        };
     }
     if (props.idioma === 'es') {
-        texto = `Soy un desarrollador web front-end con más de una década de experiencia. Trabajo con agencias de todo el mundo para crear sitios web de alto rendimiento y ricos en interactividad que funcionan en todas las plataformas y dispositivos. Aunque estoy muy familiarizado con el uso de frameworks, mis sitios web son principalmente codificados a mano usando HTML5, CSS3, SVG y JavaScript. Con un fuerte énfasis en la "Mejora Progresiva", busco formas creativas de empujar los límites del código front-end del sitio web sin comprometer el soporte del navegador y el rendimiento. En una búsqueda por mantenerme siempre actualizado, leo libros y asisto a conferencias y reuniones.`;
+        texto = {
+            parrafo1: `Me apasiona crear software que mejore la vida de los que me rodean, por ello construyo sitios web interactivas que se ejecuten en todas las plataformas y dispositivos. El área principal de mi interés es el front-end. Mi pasión por la programación comenzó con el Motorola V300 al crear pequeñas líneas de código para establecer mis canciones favoritas como tono de llamada.`,
+            parrafo2: `Con los estándares web en constante evolución, es esencial mantenerse al día con lo último y lo mejor en el código front-end, tanto si se trata de herramientas, patrones de diseño o “mejores prácticas”. Lo más importante para mí en mi trabajo es entender las tareas del cliente, y ofrecer la solución más relevante.`,
+            parrafo3: `Soy una persona curiosa, a la que le apasiona la programación, la naturaleza, los perros, los libros y las películas. Me encanta mirar fijamente una pantalla no muy brillante mientras alcanzo la solución al código que lleva días dándome errores de compilación.`,
+        };
     }
     return (
         <div className={classes.contenedor}>
-            <div className={classes.texto}>{texto}</div>
             <div className={classes.texto}>
+                <div>{texto.parrafo1}</div>
+                <div>{texto.parrafo2}</div>
+                <div>{texto.parrafo3}</div>
+            </div>
+            <div className={classes.esfera}>
                 <Esfera />
             </div>
         </div>
