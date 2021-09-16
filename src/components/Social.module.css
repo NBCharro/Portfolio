@@ -1,12 +1,35 @@
 .social {
     float: right;
 }
-.social img {
-    width: 40px;
-    height: 40px;
-    border: 1px solid aqua;
-    margin-left: 5px;
+.social svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
 }
-.social img:hover {
-    background-color: #0a66c2;
+.twitter svg {
+    fill: #1da1f2;
+}
+.linkedin svg {
+    fill: #0a66c2;
+}
+.github svg {
+    fill: #ffffff;
+}
+.email svg {
+    fill: #00e8fc;
+}
+
+.social a:hover {
+    cursor: default;
+}
+.social svg:hover {
+    cursor: pointer;
+    animation: animacionSVG 1s forwards;
+    -webkit-animation: animacionSVG 1s forwards;
+}
+
+@keyframes animacionSVG {
+    to {
+        transform: rotate(-360deg) scale(2, 2);
+    }
 }

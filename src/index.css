@@ -52,8 +52,6 @@ Courier Prime => https://fonts.google.com/specimen/Courier+Prime
 
 body {
     font-family: 'Inconsolata', monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #000000;
     color: #d9ffff;
     font-size: 16px;
