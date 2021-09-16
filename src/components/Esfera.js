@@ -1,7 +1,7 @@
 import React from 'react';
 import allIcons from 'simple-icons';
 import { IconCloud } from 'react-icon-cloud';
-import classes from './Esfera.module.css';
+import './Esfera.module.css';
 
 const Esfera = () => {
     const opciones = {
@@ -45,17 +45,15 @@ const Esfera = () => {
     //     console.log(event.target.attributes.title.nodeValue);
     // };
     return (
-        <div className={classes.iconos}>
-            <IconCloud
-                id={'icon'}
-                iconSize={82}
-                minContrastRatio={1}
-                backgroundHexColor={'#fff'}
-                fallbackHexColor={'#000'}
-                tagCanvasOptions={opciones}
-                tags={iconTags}
-            />
-        </div>
+        <IconCloud
+            id={'icon'}
+            iconSize={82}
+            minContrastRatio={1}
+            backgroundHexColor={'#fff'}
+            fallbackHexColor={'#000'}
+            tagCanvasOptions={opciones}
+            tags={iconTags}
+        />
     );
 };
 

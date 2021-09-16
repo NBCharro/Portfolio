@@ -1,20 +1,34 @@
 .contenedor {
-    margin-top: 100px;
+    margin-top: 10vh;
+    display: flex;
 }
 
 .texto {
     box-sizing: border-box;
     width: 50%;
-    height: 200px;
-    border: 2px solid red;
-    /* margin-left: 2.5%; */
     font-size: 1.5em;
-    float: left;
+    margin-left: 5%;
+    margin-top: 2vh;
+}
+.parrafo2 {
+    margin: 25px auto;
+}
+.texto h2 {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    font-size: 2em;
+    color: greenyellow;
 }
 .esfera {
     box-sizing: border-box;
     width: 50%;
-    border: 2px solid red;
-    /* margin-left: 2.5%; */
-    float: right;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.estiloTag {
+    font-family: 'Nothing You Could Do', cursive;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-size: 0.7em;
 }

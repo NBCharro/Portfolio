@@ -1,0 +1,12 @@
+.social {
+    float: right;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid aqua;
+    margin-left: 5px;
+}
+.social img:hover {
+    background-color: #0a66c2;
+}
