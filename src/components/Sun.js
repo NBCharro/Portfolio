@@ -51,24 +51,14 @@ const Sun = (props) => {
                     <div className={classes.sunFire}>
                         <div className={classes.sunFireInner}></div>
                     </div>
-                    <div className={classes.sunFire}>
-                        <div className={classes.sunFireInner}></div>
-                    </div>
-                    <div className={classes.sunFire}>
-                        <div className={classes.sunFireInner}></div>
-                    </div>
-                    <div className={classes.sunFire}>
-                        <div className={classes.sunFireInner}></div>
-                    </div>
-                    <div className={classes.sunFire}>
-                        <div className={classes.sunFireInner}></div>
-                    </div>
-                    <div className={classes.sunFire}>
-                        <div className={classes.sunFireInner}></div>
-                    </div>
                     <div className={classes.sunBorder}></div>
                 </div>
-                <div className={classes.cover}></div>
+                <div
+                    className={classes.cover}
+                    style={{
+                        backgroundImage: `url(${props.imagen})`,
+                    }}
+                ></div>
             </div>
         </>
     );

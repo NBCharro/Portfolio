@@ -7,24 +7,16 @@ import classes from './Projects.module.css';
 const Projects = (props) => {
     return (
         <>
-            {/* <div className={classes.proyecto}>
-                <img src={ComingSoon} alt="Coming Soon" />
-            </div>
-            <div className={classes.proyecto}>
-                <img src={ComingSoon} alt="Coming Soon" />
-            </div>
-            <div className={classes.proyecto} id="proyecto">
-                <img src={Ecolegas} alt="Ecolegas" />
-            </div> */}
-            <div className={classes.sol0}>
+            <div className={`${classes.sol} ${classes.sol0}`}>
                 <Sun imagen={ComingSoon} />
             </div>
-            <div className={classes.sol1}>
+            <div className={`${classes.sol} ${classes.sol1}`}>
                 <Sun imagen={ComingSoon} />
             </div>
-            <div className={classes.sol2}>
+            <div className={`${classes.sol} ${classes.sol2}`}>
                 <Sun imagen={Ecolegas} />
             </div>
+            <div className="texto">Esto es un texto</div>
         </>
     );
 };

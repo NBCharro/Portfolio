@@ -10,7 +10,6 @@
     width: 370px;
     height: 370px;
     background: #000;
-    background-image: url('../resources/ecolegas.png');
     background-size: cover;
     background-position: center;
     transform: translate(-50%, -50%);
@@ -246,76 +245,8 @@
     border-radius: 78% 43% 44% 61%;
     animation: sunFireInner 2949ms infinite alternate linear;
 }
-.sunFire:nth-child(16) {
-    animation: sunFire 5026ms infinite linear;
-}
-.sunFire:nth-child(16) .sunFireInner {
-    width: 79px;
-    height: 79px;
-    border-top: 6px solid orange;
-    border-right: 15px solid orange;
-    border-bottom: 8px solid orange;
-    border-left: 14px solid orange;
-    border-radius: 64% 69% 31% 39%;
-    animation: sunFireInner 3209ms infinite alternate linear;
-}
-.sunFire:nth-child(17) {
-    animation: sunFire 10238ms infinite linear;
-}
-.sunFire:nth-child(17) .sunFireInner {
-    width: 129px;
-    height: 129px;
-    border-top: 9px solid orange;
-    border-right: 9px solid orange;
-    border-bottom: 12px solid orange;
-    border-left: 8px solid orange;
-    border-radius: 24% 54% 20% 22%;
-    animation: sunFireInner 3044ms infinite alternate linear;
-}
-.sunFire:nth-child(18) {
-    animation: sunFire 12974ms infinite linear;
-}
-.sunFire:nth-child(18) .sunFireInner {
-    width: 112px;
-    height: 112px;
-    border-top: 11px solid orange;
-    border-right: 15px solid orange;
-    border-bottom: 10px solid orange;
-    border-left: 9px solid orange;
-    border-radius: 60% 32% 80% 48%;
-    animation: sunFireInner 2280ms infinite alternate linear;
-}
-.sunFire:nth-child(19) {
-    animation: sunFire 10534ms infinite linear;
-}
-.sunFire:nth-child(19) .sunFireInner {
-    width: 92px;
-    height: 92px;
-    border-top: 11px solid orange;
-    border-right: 12px solid orange;
-    border-bottom: 13px solid orange;
-    border-left: 14px solid orange;
-    border-radius: 45% 24% 60% 15%;
-    animation: sunFireInner 3845ms infinite alternate linear;
-}
-.sunFire:nth-child(20) {
-    animation: sunFire 7756ms infinite linear;
-}
-.sunFire:nth-child(20) .sunFireInner {
-    width: 85px;
-    height: 85px;
-    border-top: 12px solid orange;
-    border-right: 12px solid orange;
-    border-bottom: 11px solid orange;
-    border-left: 11px solid orange;
-    border-radius: 80% 47% 47% 69%;
-    animation: sunFireInner 4802ms infinite alternate linear;
-}
 
 @keyframes sunFire {
-    0% {
-        transform: rotateZ(0deg);
-    }
     100% {
         transform: rotateZ(360deg);
     }

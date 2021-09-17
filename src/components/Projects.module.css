@@ -1,21 +1,3 @@
-.proyecto {
-    margin-top: 75px;
-    width: 30%;
-    height: 650px;
-    float: left;
-    margin-left: 2.5%;
-    background-color: papayawhip;
-    border: 2px solid blue;
-}
-.proyecto img {
-    height: 100%;
-    width: 100%;
-    filter: grayscale(100%);
-}
-.proyecto:hover img {
-    filter: grayscale(0%);
-    cursor: pointer;
-}
 .sol0 {
     position: absolute;
     top: 250px;

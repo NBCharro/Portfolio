@@ -128,3 +128,29 @@ input[type='number'] {
         opacity: 1;
     }
 }
+/* Animacion cursor que va escribiendo */
+.subtitulo {
+    width: 100%;
+    max-width: 30em;
+    white-space: pre-line;
+}
+
+.subtitulo:after {
+    content: '|';
+    animation: cursor 1s linear infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    49.9% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    99.9% {
+        opacity: 1;
+    }
+}
