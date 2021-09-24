@@ -28,6 +28,7 @@ Elegidos:
 
 #00e8fc
 #000000
+#364040
 #D9FFFF
  */
 /* Tipos de letra:
@@ -55,6 +56,7 @@ body {
     background-color: #000000;
     color: #d9ffff;
     font-size: 16px;
+    overflow: hidden;
 }
 
 code {

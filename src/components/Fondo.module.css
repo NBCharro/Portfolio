@@ -78,3 +78,20 @@
 .noactive {
     color: #6c757d;
 }
+
+/* .movimientoRaton {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+} */
+.svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: #d9ffff;
+    fill: none;
+    stroke-width: 3;
+}
+.canvas {
+    border: 3px solid red;
+}

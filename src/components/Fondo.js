@@ -1,10 +1,12 @@
-import React from 'react';
 import classes from './Fondo.module.css';
 
 const Fondo = (props) => {
     return (
-        <>
-            <div className={classes.backgroundContainer}>
+        <div>
+            <div
+                className={classes.backgroundContainer}
+                // onMouseMove={moverRaton}
+            >
                 <div className={classes.stars} />
                 <div className={classes.twinkling} />
             </div>
@@ -30,7 +32,7 @@ const Fondo = (props) => {
                 </span>
             </div>
             {props.children}
-        </>
+        </div>
     );
 };
 

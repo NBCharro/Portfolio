@@ -2,6 +2,7 @@
     position: absolute;
     /* top: 50%;
     left: 50%; */
+    z-index: -5;
 }
 .cover {
     position: absolute;
@@ -9,21 +10,40 @@
     left: 50%; */
     width: 370px;
     height: 370px;
-    background: #000;
+    background: black;
+    /* background: transparent; */
     background-size: cover;
     background-position: center;
     transform: translate(-50%, -50%);
     border-radius: 100%;
-    box-shadow: 0 0 50px 10px rgba(200, 0, 0, 0.5);
-    filter: grayscale(100%);
+    box-shadow: 0 0 75px 15px yellowgreen;
+    /* filter: grayscale(100%); */
+    overflow: hidden;
 }
 .cover:hover {
+    box-shadow: 0 0 45px 3px yellow;
+    filter: grayscale(0%);
+}
+.Hijo {
+    position: absolute;
+    width: 100%;
+}
+.paraHover {
+    background-color: transparent;
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+.paraHover:hover + .cover {
+    box-shadow: 0 0 45px 3px yellow;
     filter: grayscale(0%);
 }
 .sun {
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 580px;
+    height: 580px;
     transform: translate(-50%, -50%);
     background: #000;
     border-radius: 50%;

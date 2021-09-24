@@ -1,22 +1,36 @@
 import React from 'react';
-import ComingSoon from '../resources/comingSoon.png';
-import Ecolegas from '../resources/ecolegas.png';
 import Sun from './Sun';
+import Ecolegas from './projects/Ecolegas';
+import CoomingSoon from './projects/CoomingSoon';
+import ComingSoonFoto from '../resources/comingSoon.png';
+import EcolegasFoto from '../resources/ecolegas.png';
 import classes from './Projects.module.css';
 
 const Projects = (props) => {
     return (
         <>
-            <div className={`${classes.sol} ${classes.sol0}`}>
-                <Sun imagen={ComingSoon} />
+            <div className={classes.contenedorSoles}>
+                <div className={classes.sol0}>
+                    <Sun imagen={ComingSoonFoto}>
+                        <CoomingSoon />
+                    </Sun>
+                </div>
+                <div className={classes.sol1}>
+                    <Sun imagen={ComingSoonFoto}>
+                        <CoomingSoon />
+                    </Sun>
+                </div>
+                <div className={classes.sol2}>
+                    <Sun imagen={EcolegasFoto}>
+                        <Ecolegas />
+                    </Sun>
+                </div>
+                <div className={classes.sol3}>
+                    <Sun imagen={ComingSoonFoto}>
+                        <CoomingSoon />
+                    </Sun>
+                </div>
             </div>
-            <div className={`${classes.sol} ${classes.sol1}`}>
-                <Sun imagen={ComingSoon} />
-            </div>
-            <div className={`${classes.sol} ${classes.sol2}`}>
-                <Sun imagen={Ecolegas} />
-            </div>
-            <div className="texto">Esto es un texto</div>
         </>
     );
 };
