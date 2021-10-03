@@ -7,7 +7,7 @@ const Atom = (props) => {
         setAnimacion((prev) => !prev);
     };
     const enlace = (event) => {
-        props.direccion(event.target.attributes.direccion.nodeValue);
+        props.mostrarComponentes(event.target.attributes.direccion.nodeValue);
     };
     return (
         <>

@@ -4,21 +4,93 @@
     margin: 250px auto;
 }
 .texto {
-    font-size: 2em;
-}
-.nombre {
-    font-family: 'Nothing You Could Do', cursive;
-    color: #00e8fc;
-    font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .boton {
-    background-color: transparent;
     color: #d9ffff;
     border-color: #d9ffff;
     font-size: 1.3em;
     width: 150px;
     height: 50px;
-    margin-top: 100px;
+    /* margin-top: 75px; */
     margin-left: calc(50% - 75px);
+    background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease;
+}
+.boton:hover {
+    cursor: pointer;
+    background-position: left;
+    color: black;
+    border-color: red;
+}
+.estiloTag {
+    font-family: 'Nothing You Could Do', cursive;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-size: 0.9em;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+.nombre span {
+    font-family: 'Nothing You Could Do', cursive;
+    color: #00e8fc;
+    font-weight: bold;
+    font-size: 2em;
+    transform: translateX(-2rem);
+    -webkit-transform: translateX(-2rem);
+    opacity: 0;
+    animation-delay: 0.2s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: animacionTitulo;
+}
+.nombre span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.nombre span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.nombre span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.nombre span:nth-child(5) {
+    animation-delay: 1s;
+}
+.nombre span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.nombre span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.nombre span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.nombre span:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.nombre span:nth-child(10) {
+    animation-delay: 2s;
+}
+.nombre span:nth-child(11) {
+    animation-delay: 2.2s;
+}
+.nombre span:nth-child(12) {
+    animation-delay: 2.4s;
+}
+.nombre span:nth-child(13) {
+    animation-delay: 2.6s;
+}
+@keyframes animacionTitulo {
+    0% {
+        transform: translateX(-2rem);
+        -webkit-transform: translateX(-2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
 }

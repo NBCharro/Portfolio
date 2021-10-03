@@ -1,4 +1,3 @@
-import React from 'react';
 import Sun from './Sun';
 import Ecolegas from './projects/Ecolegas';
 import CoomingSoon from './projects/CoomingSoon';

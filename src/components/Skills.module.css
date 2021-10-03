@@ -13,7 +13,7 @@
 .parrafo2 {
     margin: 25px auto;
 }
-.texto h2 {
+.titulo {
     font-family: 'Indie Flower', cursive;
     margin: 0;
     font-size: 2em;
@@ -24,6 +24,9 @@
     width: 50%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+.esfera p {
+    font-size: 1.08em;
 }
 .estiloTag {
     font-family: 'Nothing You Could Do', cursive;

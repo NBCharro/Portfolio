@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Fondo from './Fondo';
 import classes from './Componente1.module.css';
 
@@ -20,19 +20,6 @@ const Componente1 = (props) => {
         console.log(pulsado);
         // setTextoArray([]);
     };
-    // const texto = 'Hola, soy Nelson Blanco. Soy desarrollador frontend.';
-    // useEffect(() => {
-    //     let timer = 0;
-    //     const reloj = setInterval(function () {
-    //         setTextoArray((prev) => {
-    //             return [prev, texto.split('')[timer]];
-    //         });
-    //         timer++;
-    //         if (timer === texto.split('').length) {
-    //             clearInterval(reloj);
-    //         }
-    //     }, 10);
-    // }, [pulsado]);
     return (
         <Fondo>
             <motion.div

@@ -1,4 +1,3 @@
-import React from 'react';
 import Esfera from './Esfera';
 import classes from './Skills.module.css';
 
@@ -24,7 +23,7 @@ const Skills = (props) => {
         <div className={classes.contenedor}>
             <div className={classes.texto}>
                 <p className={classes.estiloTag}>{'<h2>'}</p>
-                <h2>{texto.titulo}</h2>
+                <h2 className={classes.titulo}>{texto.titulo}</h2>
                 <p className={classes.estiloTag}>{'</h2>'}</p>
                 <p className={classes.estiloTag}>{'<p>'}</p>
                 <p>{texto.parrafo1}</p>
