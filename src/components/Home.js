@@ -73,7 +73,7 @@ const Home = (props) => {
             {idiomaTexto()}
             <p className={classes.estiloTag}>{'</h1>'}</p>
             <p className={classes.estiloTag}>{'<button>'}</p>
-            <div className={classes.divBoton}>
+            <div>
                 <button className={classes.boton} onClick={props.pulsado}>
                     Acceder
                 </button>

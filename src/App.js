@@ -1,5 +1,6 @@
 // import Componente1 from './components/Componente1';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Fondo from './components/Fondo';
 import Home from './components/Home';
 import Atom from './components/Atom';
@@ -23,8 +24,8 @@ function App() {
         }
     };
     const entrarHandler = () => {
-        setAcceder(false);
         setAtomo(true);
+        setAcceder(false);
     };
     const ocultarComponentes = () => {
         setProyectos(false);
@@ -47,22 +48,39 @@ function App() {
             setContacto(true);
         }
     };
+    const containerVariants = {
+        from: {
+            y: '150px',
+            opacity: 0,
+        },
+        to: {
+            y: '25px',
+            opacity: 1,
+            transition: { duration: 0.5 },
+        },
+        exit: { y: '150px', opacity: 0, transition: { duration: 2 } },
+    };
     return (
-        <>
-            <Fondo cambiarIdioma={cambiarIdioma} idioma={idioma}>
-                {/* <Componente1 click={Handler} pulsado={acceder} /> */}
-                {acceder && <Home pulsado={entrarHandler} idioma={idioma} />}
-                {atomo && (
+        <Fondo cambiarIdioma={cambiarIdioma} idioma={idioma}>
+            {/* <Componente1 click={Handler} pulsado={acceder} /> */}
+            {acceder && <Home pulsado={entrarHandler} idioma={idioma} />}
+            {atomo && (
+                <motion.div
+                    variants={containerVariants}
+                    initial="from"
+                    animate="to"
+                    exit="exit"
+                >
                     <Atom
                         idioma={idioma}
                         mostrarComponentes={mostrarComponentes}
                     />
-                )}
-                {proyectos && <Projects idioma={idioma} />}
-                {skills && <Skills idioma={idioma} />}
-                {contacto && <Contact idioma={idioma} />}
-            </Fondo>
-        </>
+                </motion.div>
+            )}
+            {proyectos && <Projects idioma={idioma} />}
+            {skills && <Skills idioma={idioma} />}
+            {contacto && <Contact idioma={idioma} />}
+        </Fondo>
     );
 }
 

@@ -61,12 +61,16 @@ const Contact = (props) => {
                     name="message"
                     rows="4"
                 />
-                <input
-                    className={classes.boton}
-                    id="submit"
-                    value={formulario.enviar}
-                    type="submit"
-                />
+                <div className={classes.divBoton}>
+                    <p className={classes.estiloTag}>{'<button>'}</p>
+                    <input
+                        className={classes.boton}
+                        id="submit"
+                        value={formulario.enviar}
+                        type="submit"
+                    />
+                    <p className={classes.estiloTag}>{'</button>'}</p>
+                </div>
                 <p className={classes.estiloTag}>{'</form>'}</p>
             </form>
         </div>
