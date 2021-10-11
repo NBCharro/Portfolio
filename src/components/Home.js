@@ -45,7 +45,7 @@ const Home = (props) => {
                         ))}
                     </span>
                     <br />
-                    Soy un desarrollador web front-end.
+                    Soy un desarrollador web frontend.
                     <br />
                     Diseño interfaces interactivas centradas en humanos.
                 </h1>
@@ -61,7 +61,7 @@ const Home = (props) => {
                         ))}
                     </span>
                     <br />
-                    I'm a front-end web developer.
+                    I'm a frontend web developer.
                     <br />I design interactive interfaces centered on humans.
                 </h1>
             );

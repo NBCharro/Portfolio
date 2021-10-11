@@ -1,6 +1,5 @@
-// import Componente1 from './components/Componente1';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Fondo from './components/Fondo';
 import Home from './components/Home';
 import Atom from './components/Atom';
@@ -24,8 +23,10 @@ function App() {
         }
     };
     const entrarHandler = () => {
-        setAtomo(true);
         setAcceder(false);
+        setTimeout(() => {
+            setAtomo(true);
+        }, 2000);
     };
     const ocultarComponentes = () => {
         setProyectos(false);
@@ -50,20 +51,35 @@ function App() {
     };
     const containerVariants = {
         from: {
-            y: '150px',
+            y: '-120px',
             opacity: 0,
         },
         to: {
             y: '25px',
             opacity: 1,
-            transition: { duration: 0.5 },
+            transition: { duration: 1 },
         },
-        exit: { y: '150px', opacity: 0, transition: { duration: 2 } },
+        home: { opacity: 1, transition: { duration: 0.5 } },
+        exit: {
+            scale: 0,
+            opacity: 0,
+            transition: { duration: 2 },
+        },
     };
     return (
         <Fondo cambiarIdioma={cambiarIdioma} idioma={idioma}>
-            {/* <Componente1 click={Handler} pulsado={acceder} /> */}
-            {acceder && <Home pulsado={entrarHandler} idioma={idioma} />}
+            <AnimatePresence>
+                {acceder && (
+                    <motion.div
+                        variants={containerVariants}
+                        // initial="from"
+                        animate="home"
+                        exit="exit"
+                    >
+                        <Home pulsado={entrarHandler} idioma={idioma} />
+                    </motion.div>
+                )}
+            </AnimatePresence>
             {atomo && (
                 <motion.div
                     variants={containerVariants}

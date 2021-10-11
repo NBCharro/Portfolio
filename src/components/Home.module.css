@@ -22,7 +22,6 @@
     cursor: pointer;
     background-position: left;
     color: black;
-    border-color: red;
 }
 .estiloTag {
     font-family: 'Nothing You Could Do', cursive;
@@ -32,6 +31,9 @@
     font-size: 0.9em;
     margin-left: -15px;
     margin-top: 5px;
+}
+.estiloTag:hover {
+    cursor: default;
 }
 .nombre span {
     font-family: 'Nothing You Could Do', cursive;
