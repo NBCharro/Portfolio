@@ -3,6 +3,7 @@ import Ecolegas from './projects/Ecolegas';
 import CoomingSoon from './projects/CoomingSoon';
 import ComingSoonFoto from '../resources/comingSoon.png';
 import EcolegasFoto from '../resources/ecolegas.png';
+import SolFoto from '../resources/sun.png';
 import classes from './Projects.module.css';
 
 const Projects = (props) => {
@@ -10,7 +11,7 @@ const Projects = (props) => {
         <>
             <div className={classes.contenedorSoles}>
                 <div className={classes.sol0}>
-                    <Sun imagen={ComingSoonFoto}>
+                    <Sun imagen={SolFoto}>
                         <CoomingSoon />
                     </Sun>
                 </div>

@@ -154,7 +154,7 @@
 .sunFire:nth-child(7) .sunFireInner {
     width: 80px;
     height: 80px;
-    border-top: 8px solid orange;
+    border-top: 8px solid #ffa500;
     border-right: 15px solid orange;
     border-bottom: 13px solid orange;
     border-left: 12px solid orange;
@@ -282,3 +282,9 @@
         transform: translate(90px, -50%) rotateZ(360deg);
     }
 }
+
+/* 
+Colores del Sol:
+#d4ea14
+#ed2408
+ */
