@@ -1,12 +1,13 @@
 import Sun from './Sun';
 import Ecolegas from './projects/Ecolegas';
 import CoomingSoon from './projects/CoomingSoon';
-import ComingSoonFoto from '../resources/comingSoon.png';
-import EcolegasFoto from '../resources/ecolegas.png';
-import SolFoto from '../resources/sun.png';
+import SolFoto from '../resources/sun1.png';
+import SolFoto2 from '../resources/sun2.png';
+import SolFoto4 from '../resources/sun4.png';
+import SolFoto5 from '../resources/sun5.png';
 import classes from './Projects.module.css';
 
-const Projects = (props) => {
+const Projects = () => {
     return (
         <>
             <div className={classes.contenedorSoles}>
@@ -16,17 +17,17 @@ const Projects = (props) => {
                     </Sun>
                 </div>
                 <div className={classes.sol1}>
-                    <Sun imagen={ComingSoonFoto}>
+                    <Sun imagen={SolFoto5}>
                         <CoomingSoon />
                     </Sun>
                 </div>
                 <div className={classes.sol2}>
-                    <Sun imagen={EcolegasFoto}>
+                    <Sun imagen={SolFoto2}>
                         <Ecolegas />
                     </Sun>
                 </div>
                 <div className={classes.sol3}>
-                    <Sun imagen={ComingSoonFoto}>
+                    <Sun imagen={SolFoto4}>
                         <CoomingSoon />
                     </Sun>
                 </div>

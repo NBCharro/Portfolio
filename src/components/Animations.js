@@ -59,6 +59,12 @@ const Animations = (props) => {
             scale: 1,
             transition: { duration: 1 },
         },
+        atomoPulsado: {
+            y: '0%',
+            x: '40%',
+            scale: 0.35,
+            transition: { duration: 1 },
+        },
         exit: {
             scale: 0,
             transition: { duration: 1.5 },
@@ -78,8 +84,15 @@ const Animations = (props) => {
                     <motion.div
                         variants={containerVariants}
                         initial="from"
-                        animate="to"
+                        animate={
+                            proyectos === true ||
+                            skills === true ||
+                            contacto === true
+                                ? 'atomoPulsado'
+                                : 'to'
+                        }
                         exit="exit"
+                        whileHover={{ scale: 1 }}
                     >
                         <Atom
                             idioma={props.idioma}

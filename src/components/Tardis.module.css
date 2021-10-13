@@ -1,6 +1,7 @@
-:root {
+.nave {
     --main: #003b6f;
     --darker: #002d56;
+    z-index: -1;
 }
 
 .nave::before {

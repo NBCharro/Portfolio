@@ -1,3 +1,4 @@
+import Tardis from './Tardis';
 import classes from './Fondo.module.css';
 
 const Fondo = (props) => {
@@ -31,6 +32,7 @@ const Fondo = (props) => {
                     en
                 </span>
             </div>
+            <Tardis />
             {props.children}
         </div>
     );

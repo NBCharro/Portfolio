@@ -11,7 +11,7 @@ const CoomingSoon = (props) => {
             />
             <h2 className={classes.titulo}>Website en construccion</h2>
             <div className={classes.texto}>Website en construccion</div>
-            <button className={classes.boton}>
+            <button className={classes.boton} disabled>
                 <a
                     href="https://ecolegas.netlify.app/"
                     target="_blank"
