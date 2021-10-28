@@ -32,7 +32,7 @@ const Contact = (props) => {
             <h2 className={classes.titulo}>{formulario.titulo}</h2>
             <p className={classes.estiloTag}>{'</h2>'}</p>
             <p className={classes.estiloTag}>{'<p>'}</p>
-            <p>{formulario.subtitulo}</p>
+            <p className={classes.subtitulo}>{formulario.subtitulo}</p>
             <p className={classes.estiloTag}>{'</p>'}</p>
             <p className={classes.estiloTag}>{'<form>'}</p>
             <form action="#">

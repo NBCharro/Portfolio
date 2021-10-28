@@ -38,7 +38,8 @@ const Home = (props) => {
         if (props.idioma === 'es') {
             return (
                 <h1 className={classes.texto}>
-                    Hola, mi nombre es{' '}
+                    Hola, mi nombre es
+                    {window.screen.availWidth < 640 ? <br /> : ' '}
                     <span className={classes.nombre}>
                         {nombre.map((letra) => (
                             <span key={Math.random()}>{letra}</span>
@@ -54,7 +55,7 @@ const Home = (props) => {
         if (props.idioma !== 'es') {
             return (
                 <h1 className={classes.texto}>
-                    Hello, I'm{' '}
+                    Hello, I'm{window.screen.availWidth < 600 ? <br /> : ' '}
                     <span className={classes.nombre}>
                         {nombre.map((letra) => (
                             <span key={Math.random()}>{letra}</span>
@@ -75,7 +76,7 @@ const Home = (props) => {
             <p className={classes.estiloTag}>{'<button>'}</p>
             <div>
                 <button className={classes.boton} onClick={props.pulsado}>
-                    Acceder
+                    {props.idioma === 'es' ? 'Acceder' : 'Enter'}
                 </button>
                 <p className={classes.estiloTag}>{'</button>'}</p>
             </div>

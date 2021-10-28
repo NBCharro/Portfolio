@@ -131,3 +131,37 @@
         transform: rotate(360deg);
     }
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1080px) {
+    .electron[direccion]:after,
+    .electron2[direccion]:after,
+    .proton[direccion]:after,
+    .proton2[direccion]:after {
+        content: attr(direccion);
+        color: black;
+        background-color: #c3e6e6;
+        border: 3px solid purple;
+        text-align: center;
+        border-radius: 10px;
+        padding: 4px 8px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 2;
+    }
+    .proton[direccion]:after {
+        left: 5px;
+        top: 55%;
+    }
+    .proton2[direccion]:after {
+        left: 0px;
+        top: 25%;
+    }
+    .electron[direccion]:after,
+    .electron2[direccion]:after {
+        left: -15px;
+        top: 20%;
+        width: 60px;
+    }
+}

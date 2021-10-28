@@ -17,7 +17,7 @@ textarea {
     border-bottom: 1px solid #fafafa;
     background: transparent;
     color: #d9ffff;
-    /* font-size: 1.8rem; */
+    font-size: 16px;
     /* box-shadow: none; */
     outline: none;
 }
@@ -29,7 +29,7 @@ input[type='text']:not(output):focus,
 input[type='email']:not(output):focus,
 input[type='number']:not(output):focus,
 textarea:focus {
-    border-bottom: 1px solid #f300b4;
+    border-bottom: 1px solid #00e8fc;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -49,7 +49,6 @@ input[type='number'] {
     width: 60%;
     margin-left: 20%;
     margin-top: 10vh;
-    font-size: 1.5em;
 }
 .contacto textarea {
     resize: none;
@@ -59,7 +58,7 @@ input[type='number'] {
     margin: 0;
     padding: 0;
     color: grey;
-    font-size: 0.9em;
+    font-size: 14px;
     margin-left: -15px;
     margin-top: 5px;
 }
@@ -74,6 +73,7 @@ input[type='number'] {
     background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
     background-size: 200%;
     transition: 0.5s ease-out;
+    font-size: 24px;
 }
 .divBoton {
     float: right;
@@ -84,12 +84,14 @@ input[type='number'] {
     cursor: pointer;
     background-position: left;
     color: black;
-    border-color: red;
 }
 
 .titulo {
     font-family: 'Indie Flower', cursive;
     margin: 0;
-    font-size: 2em;
-    color: greenyellow;
+    font-size: 48px;
+    color: #00e8fc;
+}
+.subtitulo {
+    font-size: 24px;
 }

@@ -15,7 +15,7 @@ const Skills = (props) => {
         texto = {
             titulo: `Conocimientos`,
             parrafo1: `Me apasiona crear software que mejore la vida de los que me rodean, por ello construyo sitios web interactivas que se ejecuten en todas las plataformas y dispositivos. El área principal de mi interés es el front-end. Mi pasión por la programación comenzó con el Motorola V300 al crear pequeñas líneas de código para establecer mis canciones favoritas como tono de llamada.`,
-            parrafo2: `Con los estándares web en constante evolución, es esencial mantenerse al día con lo último y lo mejor en el código front-end, tanto si se trata de herramientas, patrones de diseño o “mejores prácticas”. Lo más importante para mí en mi trabajo es entender las tareas del cliente, y ofrecer la solución más relevante.`,
+            parrafo2: `Con los estándares web en constante evolución, es esencial mantenerse al día con lo último y lo mejor en el código frontend, tanto si se trata de herramientas, patrones de diseño o “mejores prácticas”. Lo más importante para mí en mi trabajo es entender las tareas del cliente, y ofrecer la solución más relevante.`,
             parrafo3: `Soy una persona curiosa, a la que le apasiona la programación, la naturaleza, los perros, los libros y las películas. Me encanta mirar fijamente una pantalla no muy brillante mientras alcanzo la solución al código que lleva días dándome errores de compilación.`,
         };
     }

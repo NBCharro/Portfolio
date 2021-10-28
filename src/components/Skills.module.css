@@ -6,7 +6,7 @@
 .texto {
     box-sizing: border-box;
     width: 50%;
-    font-size: 1.5em;
+    font-size: 24px;
     margin-left: 5%;
     margin-top: 2vh;
 }
@@ -16,8 +16,8 @@
 .titulo {
     font-family: 'Indie Flower', cursive;
     margin: 0;
-    font-size: 2em;
-    color: greenyellow;
+    font-size: 48px;
+    color: #00e8fc;
 }
 .esfera {
     box-sizing: border-box;
@@ -25,13 +25,39 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
-.esfera p {
-    font-size: 1.08em;
-}
 .estiloTag {
     font-family: 'Nothing You Could Do', cursive;
     margin: 0;
     padding: 0;
     color: grey;
-    font-size: 0.7em;
+    font-size: 14px;
+    /* font-size: 0.7em; */
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 640px) {
+    .contenedor {
+        margin-top: 10vh;
+        display: inline;
+        height: auto;
+    }
+    .texto {
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2vh;
+    }
+    .esfera {
+        box-sizing: border-box;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .home {
+        width: 80%;
+        height: auto;
+        margin: 150px auto;
+    }
 }
