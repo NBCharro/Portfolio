@@ -11,6 +11,7 @@ import githubSVG from 'simple-icons/icons/github';
 import visualstudiocodeSVG from 'simple-icons/icons/visualstudiocode';
 import figmaSVG from 'simple-icons/icons/figma';
 import javaSVG from 'simple-icons/icons/java';
+import wordpressSVG from 'simple-icons/icons/wordpress';
 import './Esfera.module.css';
 
 const Esfera = () => {
@@ -45,6 +46,7 @@ const Esfera = () => {
         { id: 'visualstudiocode', simpleIcon: visualstudiocodeSVG },
         { id: 'figma', simpleIcon: figmaSVG },
         { id: 'java', simpleIcon: javaSVG },
+        { id: 'wordpress', simpleIcon: wordpressSVG },
     ];
     return (
         <IconCloud

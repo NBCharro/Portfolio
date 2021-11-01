@@ -27,7 +27,6 @@ const Contact = (props) => {
     }
     return (
         <div className={classes.contacto}>
-            <Social />
             <p className={classes.estiloTag}>{'<h2>'}</p>
             <h2 className={classes.titulo}>{formulario.titulo}</h2>
             <p className={classes.estiloTag}>{'</h2>'}</p>
@@ -72,6 +71,9 @@ const Contact = (props) => {
                     <p className={classes.estiloTag}>{'</button>'}</p>
                 </div>
                 <p className={classes.estiloTag}>{'</form>'}</p>
+                <div className={classes.iconos}>
+                    <Social />
+                </div>
             </form>
         </div>
     );

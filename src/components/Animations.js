@@ -7,9 +7,9 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 const Animations = (props) => {
-    const [acceder, setAcceder] = useState(true);
+    const [acceder, setAcceder] = useState(false);
     const [atomo, setAtomo] = useState(false);
-    const [proyectos, setProyectos] = useState(false);
+    const [proyectos, setProyectos] = useState(true);
     const [skills, setSkills] = useState(false);
     const [contacto, setContacto] = useState(false);
     const entrarHandler = () => {
@@ -61,7 +61,7 @@ const Animations = (props) => {
         },
         atomoPulsado: {
             y: '0%',
-            x: '40%',
+            x: '30%',
             scale: 0.35,
             transition: { duration: 1 },
         },

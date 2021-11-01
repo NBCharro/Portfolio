@@ -16,13 +16,20 @@ const Tardis = () => {
             scale: [0.25, 0.15, 0.2, 0.15, 0.25],
             transition: { repeat: Infinity, duration: 30 },
         },
+        phone: {
+            y: ['250%', '-150%', '150%', '-95%', '-95%'],
+            x: ['-500%', '250%', '0%', '-250%', '250%'],
+            rotate: [0, 30, 0, -45, 0],
+            scale: [0.25, 0.15, 0.2, 0.15, 0.25],
+            transition: { repeat: Infinity, duration: 30 },
+        },
     };
     return (
         <motion.div
             className={classes.nave}
             variants={containerVariants}
             initial="from"
-            animate="to"
+            animate={window.screen.availWidth > 640 ? 'to' : 'phone'}
         ></motion.div>
     );
 };

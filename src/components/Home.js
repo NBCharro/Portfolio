@@ -55,7 +55,8 @@ const Home = (props) => {
         if (props.idioma !== 'es') {
             return (
                 <h1 className={classes.texto}>
-                    Hello, I'm{window.screen.availWidth < 600 ? <br /> : ' '}
+                    Hello, my name is
+                    {window.screen.availWidth < 600 ? <br /> : ' '}
                     <span className={classes.nombre}>
                         {nombre.map((letra) => (
                             <span key={Math.random()}>{letra}</span>

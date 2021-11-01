@@ -20,10 +20,10 @@
     /* filter: grayscale(100%); */
     overflow: hidden;
 }
-.cover:hover {
+/* .cover:hover {
     box-shadow: 0 0 45px 3px yellow;
     filter: grayscale(0%);
-}
+} */
 .Hijo {
     position: absolute;
     width: 100%;
@@ -36,10 +36,10 @@
     transform: translate(-50%, -50%);
     border-radius: 100%;
 }
-.paraHover:hover + .cover {
+/* .paraHover:hover + .cover {
     box-shadow: 0 0 45px 3px yellow;
     filter: grayscale(0%);
-}
+} */
 .sun {
     position: absolute;
     width: 580px;
