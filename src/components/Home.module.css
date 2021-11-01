@@ -102,10 +102,11 @@
     .home {
         width: 90%;
         height: auto;
-        margin: 50px auto;
+        margin-top: 50px;
+        margin-left: 5%;
     }
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 641px) and (max-width: 1080px) {
     .home {
         width: 80%;
         height: auto;

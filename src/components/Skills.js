@@ -31,9 +31,11 @@ const Skills = (props) => {
                 <p>{texto.parrafo3}</p>
                 <p className={classes.estiloTag}>{'</p>'}</p>
             </div>
-            <div className={classes.esfera}>
+            <div className={classes.esferaGrupo}>
                 <p className={classes.estiloTag}>{'<div>'}</p>
-                <Esfera />
+                <div className={classes.esfera}>
+                    <Esfera />
+                </div>
                 <p className={classes.estiloTag}>{'</div>'}</p>
             </div>
         </div>

@@ -6,7 +6,6 @@ textarea {
     height: 40%;
     transition: 200ms;
 }
-
 input[type='text'],
 input[type='email'],
 input[type='number'],
@@ -21,7 +20,6 @@ textarea {
     /* box-shadow: none; */
     outline: none;
 }
-
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='number']:focus,
@@ -31,20 +29,17 @@ input[type='number']:not(output):focus,
 textarea:focus {
     border-bottom: 1px solid #00e8fc;
 }
-
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 input[type='number'] {
     -moz-appearance: textfield;
 }
 ::placeholder {
     color: #fafafa;
 }
-
 .contacto {
     width: 60%;
     margin-left: 20%;
@@ -79,13 +74,11 @@ input[type='number'] {
     float: right;
     margin-top: 25px;
 }
-
 .boton:hover {
     cursor: pointer;
     background-position: left;
     color: black;
 }
-
 .titulo {
     font-family: 'Indie Flower', cursive;
     margin: 0;
@@ -94,4 +87,34 @@ input[type='number'] {
 }
 .subtitulo {
     font-size: 24px;
+}
+
+@media only screen and (max-width: 640px) {
+    .contacto {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 25px;
+    }
+    .subtitulo {
+        font-size: 18px;
+        margin: 0;
+    }
+    input,
+    textarea {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 641px) and (max-width: 1080px) {
+    .contacto {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .subtitulo {
+        margin: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
 }

@@ -32,7 +32,9 @@ const Fondo = (props) => {
                     en
                 </span>
             </div>
-            <Tardis />
+            <div className={classes.tardis}>
+                <Tardis />
+            </div>
             {props.children}
         </div>
     );

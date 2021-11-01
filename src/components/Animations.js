@@ -7,10 +7,10 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 const Animations = (props) => {
-    const [acceder, setAcceder] = useState(false);
+    const [acceder, setAcceder] = useState(true);
     const [atomo, setAtomo] = useState(false);
     const [proyectos, setProyectos] = useState(false);
-    const [skills, setSkills] = useState(true);
+    const [skills, setSkills] = useState(false);
     const [contacto, setContacto] = useState(false);
     const entrarHandler = () => {
         setAcceder(false);

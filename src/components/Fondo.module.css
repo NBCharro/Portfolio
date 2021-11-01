@@ -95,3 +95,15 @@
 .canvas {
     border: 3px solid red;
 }
+
+.tardis {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
