@@ -2,25 +2,25 @@
     position: absolute;
     top: 350px;
     left: 22%;
-    transform: scale(0.5, 0.5) rotate(60deg);
+    /* transform: scale(0.5, 0.5) rotate(60deg); */
 }
 .sol1 {
     position: absolute;
     top: 250px;
     left: 57%;
-    transform: scale(0.25, 0.25) rotate(330deg);
+    /* transform: scale(0.25, 0.25) rotate(30deg); */
 }
 .sol2 {
     position: absolute;
     top: 650px;
     left: 83%;
-    transform: scale(0.75, 0.75) rotate(22deg);
+    /* transform: scale(0.75, 0.75) rotate(22deg); */
 }
 .sol3 {
     position: absolute;
     top: 850px;
     left: 39%;
-    transform: scale(0.35, 0.35) rotate(0deg);
+    /* transform: scale(0.35, 0.35) rotate(0deg); */
 }
 .contenedorSoles {
     margin: 0;
@@ -44,7 +44,7 @@
     left: 50%;
 } */
 
-.solInactivo {
+/* .solInactivo {
     opacity: 0;
     transform: scale(0.1);
     transition-duration: 2s;
@@ -55,7 +55,7 @@
     top: 50%;
     left: 50%;
     transition-duration: 2s;
-}
+} */
 
 .texto {
     position: absolute;
@@ -69,25 +69,25 @@
     .sol0 {
         top: 160px;
         left: 25%;
-        transform: scale(0.3, 0.3) rotate(60deg);
+        /* transform: scale(0.35, 0.35) rotate(60deg); */
     }
     .sol1 {
         top: 220px;
         left: 75%;
-        transform: scale(0.2, 0.2) rotate(330deg);
+        /* transform: scale(0.2, 0.2) rotate(330deg); */
     }
     .sol2 {
         top: 500px;
         left: 70%;
-        transform: scale(0.45, 0.45) rotate(22deg);
+        /* transform: scale(0.45, 0.45) rotate(22deg); */
     }
     .sol3 {
         position: absolute;
         top: 380px;
         left: 25%;
-        transform: scale(0.28, 0.28) rotate(0deg);
+        /* transform: scale(0.28, 0.28) rotate(0deg); */
     }
-    .contenedorSoles:hover > * {
+    /* .contenedorSoles:hover > * {
         transform: scale(0);
         transition-duration: 2s;
     }
@@ -95,31 +95,31 @@
         transform: scale(1);
         top: 300px;
         left: 50%;
-    }
+    } */
 }
 @media only screen and (min-width: 641) and (max-width: 1080px) {
     .sol0 {
         top: 150px;
         left: 0%;
-        transform: scale(0.4, 0.4) rotate(60deg);
+        /* transform: scale(0.35, 0.35) rotate(60deg); */
     }
     .sol1 {
         top: 150px;
         left: 75%;
-        transform: scale(0.2, 0.2) rotate(330deg);
+        /* transform: scale(0.2, 0.2) rotate(330deg); */
     }
     .sol2 {
         top: 400px;
         left: 60%;
-        transform: scale(0.45, 0.45) rotate(22deg);
+        /* transform: scale(0.45, 0.45) rotate(22deg); */
     }
     .sol3 {
         position: absolute;
         top: 450px;
         left: 20%;
-        transform: scale(0.28, 0.28) rotate(0deg);
+        /* transform: scale(0.28, 0.28) rotate(0deg); */
     }
-    .contenedorSoles:hover > * {
+    /* .contenedorSoles:hover > * {
         transform: scale(0);
         transition-duration: 2s;
     }
@@ -127,5 +127,5 @@
         transform: scale(1);
         top: 300px;
         left: 50%;
-    }
+    } */
 }
