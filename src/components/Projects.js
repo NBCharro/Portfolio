@@ -16,42 +16,40 @@ const Projects = () => {
         setSolClickado((prev) => !prev);
         setSolActivo(sol);
     };
-    const valor = window.screen.availWidth;
-    console.log(valor);
+    const pantalla = window.screen.availWidth;
     const containerVariants = {
         sol0: {
-            scale: `${valor > 1080 ? 0.5 : 0.35}`,
+            scale: `${pantalla > 1080 ? 0.5 : 0.35}`,
             rotate: 60,
-            transition: { duration: 1 },
+            transition: { duration: 0.5 },
         },
         sol1: {
-            scale: `${valor > 1080 ? 0.25 : 0.2}`,
+            scale: `${pantalla > 1080 ? 0.25 : 0.2}`,
             rotate: 30,
-            transition: { duration: 1 },
+            transition: { duration: 0.5 },
         },
         sol2: {
-            scale: `${valor > 1080 ? 0.75 : 0.45}`,
+            scale: `${pantalla > 1080 ? 0.75 : 0.45}`,
             rotate: 22,
-            transition: { duration: 1 },
+            transition: { duration: 0.5 },
         },
         sol3: {
-            scale: `${valor > 1080 ? 0.35 : 0.28}`,
+            scale: `${pantalla > 1080 ? 0.35 : 0.28}`,
             rotate: 0,
-            transition: { duration: 1 },
+            transition: { duration: 0.5 },
         },
         inactivo: {
-            opacity: 0,
             scale: 0,
-            y: '50%',
-            x: '50%',
-            transition: { duration: 1 },
+            originX: '50%',
+            transition: { duration: 0.5 },
         },
         to: {
+            // scale: `${pantalla > 640 ? 1.6 : 1}`,
             scale: 1.6,
             rotate: 0,
-            y: '50%',
-            x: '50%',
-            transition: { duration: 1 },
+            top: '50%',
+            left: '50%',
+            transition: { duration: 0.25 },
         },
     };
     return (
