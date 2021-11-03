@@ -1,32 +1,34 @@
 .home {
     width: 50%;
-    height: 250px;
+    height: auto;
     margin: 250px auto;
+    overflow: hidden;
 }
-.boton {
+
+/* .boton {
     color: #d9ffff;
     border-color: #d9ffff;
     width: 150px;
     height: 50px;
-    /* margin-top: 75px; */
     margin-left: calc(50% - 75px);
     background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
     background-size: 200%;
     transition: 0.5s ease;
     font-size: 24px;
-}
+} 
 .boton:hover {
-    cursor: pointer;
-    background-position: left;
-    color: black;
+	cursor: pointer;
+	background-position: left;
+	color: black;
 }
+*/
 .estiloTag {
     font-family: 'Nothing You Could Do', cursive;
     margin: 0;
     padding: 0;
     color: grey;
     font-size: 14px;
-    margin-left: -15px;
+    margin-left: 0px;
     margin-top: 5px;
 }
 .estiloTag:hover {
@@ -111,5 +113,96 @@
         width: 80%;
         height: auto;
         margin: 150px auto;
+    }
+}
+/* BLACK HOLE */
+.star {
+    z-index: -1;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d9ffff;
+    animation: drain 4s ease-in infinite;
+    border-radius: 50%;
+    opacity: 0;
+}
+.star:first-of-type {
+    top: 0%;
+    left: 5%;
+}
+.star:nth-of-type(2) {
+    top: 75%;
+    left: 90%;
+    animation-delay: 1s;
+}
+.star:nth-of-type(3) {
+    top: 90%;
+    left: 140%;
+    animation-delay: 3s;
+}
+.star:nth-of-type(4) {
+    top: 60%;
+    left: 1%;
+    animation-delay: 1.8s;
+}
+.star:nth-of-type(5) {
+    top: 0%;
+    left: 90%;
+    animation-delay: 2s;
+}
+.boton {
+    color: black;
+    border-color: #d9ffff;
+    width: 100px;
+    height: 100px;
+    margin-left: calc(50% - 50px);
+    background-color: black;
+    background-size: 200%;
+    transition: 0.5s ease;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px #d9ffff;
+    z-index: 2;
+}
+.boton:hover {
+    cursor: pointer;
+    color: #d9ffff;
+}
+@keyframes drain {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.75);
+    }
+
+    100% {
+        opacity: 0;
+        top: 550px;
+        left: 50%;
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 1080px) {
+    @keyframes drain {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(0.75);
+        }
+
+        100% {
+            opacity: 0;
+            top: 550px;
+            left: 50%;
+            transform: scale(1);
+        }
     }
 }

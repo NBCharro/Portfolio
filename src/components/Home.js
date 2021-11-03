@@ -76,8 +76,13 @@ const Home = (props) => {
             <p className={classes.estiloTag}>{'</h1>'}</p>
             <p className={classes.estiloTag}>{'<button>'}</p>
             <div>
+                <div className={classes.star} />
+                <div className={classes.star} />
+                <div className={classes.star} />
+                <div className={classes.star} />
+                <div className={classes.star} />
                 <button className={classes.boton} onClick={props.pulsado}>
-                    {props.idioma === 'es' ? 'Acceder' : 'Enter'}
+                    {props.idioma === 'es' ? 'Entrar' : 'Enter'}
                 </button>
                 <p className={classes.estiloTag}>{'</button>'}</p>
             </div>

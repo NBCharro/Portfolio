@@ -1,25 +1,25 @@
 .sol0 {
     position: absolute;
     top: 350px;
-    left: 22%;
+    left: 20%;
     /* transform: scale(0.5, 0.5) rotate(60deg); */
 }
 .sol1 {
     position: absolute;
     top: 250px;
-    left: 57%;
+    left: 55%;
     /* transform: scale(0.25, 0.25) rotate(30deg); */
 }
 .sol2 {
     position: absolute;
     top: 650px;
-    left: 83%;
+    left: 75%;
     /* transform: scale(0.75, 0.75) rotate(22deg); */
 }
 .sol3 {
     position: absolute;
-    top: 850px;
-    left: 39%;
+    top: 650px;
+    left: 40%;
     /* transform: scale(0.35, 0.35) rotate(0deg); */
 }
 .contenedorSoles {
@@ -30,7 +30,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    z-index: -1;
 }
 /* .contenedorSoles:hover > * {
     opacity: 0;

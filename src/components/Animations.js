@@ -7,9 +7,9 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 const Animations = (props) => {
-    const [acceder, setAcceder] = useState(false);
+    const [acceder, setAcceder] = useState(true);
     const [atomo, setAtomo] = useState(false);
-    const [proyectos, setProyectos] = useState(true);
+    const [proyectos, setProyectos] = useState(false);
     const [skills, setSkills] = useState(false);
     const [contacto, setContacto] = useState(false);
     const entrarHandler = () => {
@@ -51,13 +51,24 @@ const Animations = (props) => {
             scale: 1,
             transition: { duration: 1 },
         },
-        exitHome: { scale: 0, transition: { duration: 1.5 } },
+        exitHome: {
+            scale: 0,
+            opacity: 0,
+            y: '150px',
+            x: '-15px',
+            rotateY: 120,
+            transition: { duration: 1.5 },
+        },
+        Home2: {
+            rotateY: [0, 90, 0],
+            transition: { duration: 10, repeat: Infinity },
+        },
         atomo: {
-            y: ['25px', '50px', '75px', '25px'],
-            x: ['15px', '150px', '-25px', '0px'],
+            x: ['0px', '0px'],
+            y: ['1500px', '0px'],
             opacity: 1,
             scale: 1,
-            transition: { duration: 1 },
+            transition: { duration: 5, repeat: Infinity },
         },
         atomoPulsado: {
             y: '0%',
@@ -74,7 +85,11 @@ const Animations = (props) => {
         <>
             <AnimatePresence>
                 {acceder && (
-                    <motion.div variants={containerVariants} exit="exitHome">
+                    <motion.div
+                        variants={containerVariants}
+                        exit="exitHome"
+                        animate="Home"
+                    >
                         <Home pulsado={entrarHandler} idioma={props.idioma} />
                     </motion.div>
                 )}
