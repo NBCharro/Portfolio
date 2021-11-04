@@ -2,33 +2,10 @@ import { useEffect, useState } from 'react';
 import classes from './Home.module.css';
 
 const Home = (props) => {
-    const [nombre, setNombre] = useState([
-        'N',
-        'B',
-        'C',
-        'h',
-        'a',
-        'r',
-        'r',
-        'o',
-    ]);
+    const [nombre, setNombre] = useState('N B Charro');
     useEffect(() => {
         const timer = setTimeout(() => {
-            setNombre([
-                'N',
-                'e',
-                'l',
-                's',
-                'o',
-                'n',
-                ' ',
-                'B',
-                'l',
-                'a',
-                'n',
-                'c',
-                'o',
-            ]);
+            setNombre('Nelson Blanco');
         }, 3000);
         return () => {
             clearTimeout(timer);
@@ -39,9 +16,9 @@ const Home = (props) => {
             return (
                 <h1 className={classes.texto}>
                     Hola, mi nombre es
-                    {window.screen.availWidth < 640 ? <br /> : ' '}
+                    <br />
                     <span className={classes.nombre}>
-                        {nombre.map((letra) => (
+                        {nombre.split('').map((letra) => (
                             <span key={Math.random()}>{letra}</span>
                         ))}
                     </span>
@@ -56,9 +33,9 @@ const Home = (props) => {
             return (
                 <h1 className={classes.texto}>
                     Hello, my name is
-                    {window.screen.availWidth < 600 ? <br /> : ' '}
+                    <br />
                     <span className={classes.nombre}>
-                        {nombre.map((letra) => (
+                        {nombre.split('').map((letra) => (
                             <span key={Math.random()}>{letra}</span>
                         ))}
                     </span>
@@ -74,13 +51,13 @@ const Home = (props) => {
             <p className={classes.estiloTag}>{'<h1>'}</p>
             {idiomaTexto()}
             <p className={classes.estiloTag}>{'</h1>'}</p>
-            <p className={classes.estiloTag}>{'<button>'}</p>
-            <div>
-                <div className={classes.star} />
-                <div className={classes.star} />
-                <div className={classes.star} />
-                <div className={classes.star} />
-                <div className={classes.star} />
+            <div className={classes.star} />
+            <div className={classes.star} />
+            <div className={classes.star} />
+            <div className={classes.star} />
+            <div className={classes.star} />
+            <div className={classes.agujero}>
+                <p className={classes.estiloTag}>{'<button>'}</p>
                 <button className={classes.boton} onClick={props.pulsado}>
                     {props.idioma === 'es' ? 'Entrar' : 'Enter'}
                 </button>

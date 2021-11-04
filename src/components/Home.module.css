@@ -1,27 +1,18 @@
 .home {
     width: 50%;
     height: auto;
-    margin: 250px auto;
+    /* margin: 250px auto auto auto; */
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.homeButton {
+    width: 50%;
+    height: auto;
+    margin: auto;
     overflow: hidden;
 }
-
-/* .boton {
-    color: #d9ffff;
-    border-color: #d9ffff;
-    width: 150px;
-    height: 50px;
-    margin-left: calc(50% - 75px);
-    background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
-    background-size: 200%;
-    transition: 0.5s ease;
-    font-size: 24px;
-} 
-.boton:hover {
-	cursor: pointer;
-	background-position: left;
-	color: black;
-}
-*/
 .estiloTag {
     font-family: 'Nothing You Could Do', cursive;
     margin: 0;
@@ -30,6 +21,9 @@
     font-size: 14px;
     margin-left: 0px;
     margin-top: 5px;
+}
+.agujero .estiloTag {
+    margin-bottom: 100px;
 }
 .estiloTag:hover {
     cursor: default;
@@ -104,15 +98,19 @@
     .home {
         width: 90%;
         height: auto;
-        margin-top: 50px;
-        margin-left: 5%;
+        /* margin-top: 50px;
+        margin-left: 5%; */
+        top: 10%;
+        left: 5%;
     }
 }
 @media only screen and (min-width: 641px) and (max-width: 1080px) {
     .home {
         width: 80%;
         height: auto;
-        margin: 150px auto;
+        /* margin: 150px auto; */
+        top: 10%;
+        left: 10%;
     }
 }
 /* BLACK HOLE */
@@ -155,7 +153,7 @@
     border-color: #d9ffff;
     width: 100px;
     height: 100px;
-    margin-left: calc(50% - 50px);
+    /* margin-left: calc(50% - 50px); */
     background-color: black;
     background-size: 200%;
     transition: 0.5s ease;
@@ -164,6 +162,9 @@
     box-shadow: 0 0 10px 1px #d9ffff;
     animation: enterColor 9s ease-in infinite;
     z-index: 2;
+    position: absolute;
+    top: calc(65% - 50px);
+    left: calc(50% - 50px);
 }
 .boton:hover {
     cursor: pointer;
@@ -182,7 +183,7 @@
 
     100% {
         opacity: 0;
-        top: 550px;
+        top: 65%;
         left: 50%;
         transform: scale(1);
     }
@@ -193,25 +194,5 @@
     }
     50% {
         color: #d9ffff;
-    }
-}
-@media only screen and (max-width: 1080px) {
-    @keyframes drain {
-        0% {
-            opacity: 0;
-            transform: scale(0.5);
-        }
-
-        50% {
-            opacity: 1;
-            transform: scale(0.75);
-        }
-
-        100% {
-            opacity: 0;
-            top: 550px;
-            left: 50%;
-            transform: scale(1);
-        }
     }
 }

@@ -92,12 +92,18 @@ const Projects = () => {
             opacity: 1,
             transition: { duration: 1 },
         },
+        exit: {
+            y: '-100px',
+            opacity: 0,
+            transition: { duration: 1 },
+        },
     };
     return (
         <>
             <motion.div
                 className={classes.contenedorSoles}
                 variants={containerVariants}
+                exit="exit"
             >
                 <motion.div
                     className={classes.sol0}
