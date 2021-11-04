@@ -121,7 +121,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #d9ffff;
+    background-color: #00e8fc;
     animation: drain 4s ease-in infinite;
     border-radius: 50%;
     opacity: 0;
@@ -162,6 +162,7 @@
     font-size: 24px;
     border-radius: 50%;
     box-shadow: 0 0 10px 1px #d9ffff;
+    animation: enterColor 9s ease-in infinite;
     z-index: 2;
 }
 .boton:hover {
@@ -184,6 +185,14 @@
         top: 550px;
         left: 50%;
         transform: scale(1);
+    }
+}
+@keyframes enterColor {
+    0% {
+        color: black;
+    }
+    50% {
+        color: #d9ffff;
     }
 }
 @media only screen and (max-width: 1080px) {

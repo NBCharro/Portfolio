@@ -7,9 +7,9 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 const Animations = (props) => {
-    const [acceder, setAcceder] = useState(true);
-    const [atomo, setAtomo] = useState(false);
-    const [proyectos, setProyectos] = useState(false);
+    const [acceder, setAcceder] = useState(false);
+    const [atomo, setAtomo] = useState(true);
+    const [proyectos, setProyectos] = useState(true);
     const [skills, setSkills] = useState(false);
     const [contacto, setContacto] = useState(false);
     const entrarHandler = () => {
@@ -51,6 +51,12 @@ const Animations = (props) => {
             scale: 1,
             transition: { duration: 1 },
         },
+        atomoPulsado: {
+            y: '0%',
+            x: '30%',
+            scale: 0.35,
+            transition: { duration: 1 },
+        },
         exitHome: {
             scale: 0,
             opacity: 0,
@@ -59,44 +65,46 @@ const Animations = (props) => {
             rotateY: 120,
             transition: { duration: 1.5 },
         },
-        Home2: {
-            rotateY: [0, 90, 0],
-            transition: { duration: 10, repeat: Infinity },
-        },
-        atomo: {
-            x: ['0px', '0px'],
-            y: ['1500px', '0px'],
-            opacity: 1,
-            scale: 1,
-            transition: { duration: 5, repeat: Infinity },
-        },
-        atomoPulsado: {
-            y: '0%',
-            x: '30%',
-            scale: 0.35,
-            transition: { duration: 1 },
-        },
-        exit: {
+        atomoExit: {
             scale: 0,
             transition: { duration: 1.5 },
+        },
+        contactExit: {
+            y: '100px',
+            position: 'relative',
+            zIndex: -1,
+            opacity: 0,
+            transition: { when: 'beforeChildren', duration: 1 },
+        },
+        contact: {
+            y: '100px',
+            position: 'relative',
+            zIndex: -1,
+            opacity: 0,
+        },
+        contactAnimate: {
+            y: '0px',
+            opacity: 1,
+            transition: { duration: 1 },
+        },
+        projects: {
+            y: '-200px',
+        },
+        projectsAnimate: {
+            y: '0px',
+            opacity: 1,
+        },
+        projectsExit: {
+            y: '-200px',
+            transition: { duration: 2 },
         },
     };
     return (
         <>
             <AnimatePresence>
-                {acceder && (
-                    <motion.div
-                        variants={containerVariants}
-                        exit="exitHome"
-                        animate="Home"
-                    >
-                        <Home pulsado={entrarHandler} idioma={props.idioma} />
-                    </motion.div>
-                )}
-            </AnimatePresence>
-            <AnimatePresence>
                 {atomo && (
                     <motion.div
+                        key="atom"
                         variants={containerVariants}
                         initial="from"
                         animate={
@@ -106,7 +114,7 @@ const Animations = (props) => {
                                 ? 'atomoPulsado'
                                 : 'to'
                         }
-                        exit="exit"
+                        exit="atomoExit"
                         whileHover={{ scale: 1 }}
                     >
                         <Atom
@@ -116,14 +124,44 @@ const Animations = (props) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-            <AnimatePresence>
-                {proyectos && <Projects idioma={props.idioma} />}
-            </AnimatePresence>
-            <AnimatePresence>
-                {skills && <Skills idioma={props.idioma} />}
-            </AnimatePresence>
-            <AnimatePresence>
-                {contacto && <Contact idioma={props.idioma} />}
+            <AnimatePresence exitBeforeEnter>
+                {acceder && (
+                    <motion.div
+                        key="home"
+                        variants={containerVariants}
+                        exit="exitHome"
+                        animate="Home"
+                    >
+                        <Home pulsado={entrarHandler} idioma={props.idioma} />
+                    </motion.div>
+                )}
+                {proyectos && (
+                    <motion.div
+                        key="projects"
+                        variants={containerVariants}
+                        initial="projects"
+                        animate="projectsAnimate"
+                        exit="projectsExit"
+                    >
+                        <Projects idioma={props.idioma} />
+                    </motion.div>
+                )}
+                {skills && (
+                    <motion.div key="skills" variants={containerVariants}>
+                        <Skills idioma={props.idioma} />
+                    </motion.div>
+                )}
+                {contacto && (
+                    <motion.div
+                        key="contact"
+                        variants={containerVariants}
+                        initial="contact"
+                        animate="contactAnimate"
+                        exit="contactExit"
+                    >
+                        <Contact idioma={props.idioma} />
+                    </motion.div>
+                )}
             </AnimatePresence>
         </>
     );

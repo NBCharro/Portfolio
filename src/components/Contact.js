@@ -51,7 +51,7 @@ const Contact = (props) => {
                     placeholder={formulario.telefono}
                     name="phone"
                     type="number"
-                    size="6"
+                    size="9"
                     required
                 />
                 <textarea

@@ -66,24 +66,46 @@ const Projects = () => {
             filter: ['contrast(100%)', 'contrast(150%)', 'contrast(100%)'],
             transition: { repeat: Infinity, duration: 5, ease: 'linear' },
         },
+        sol0Initial: {
+            x: '-100px',
+            y: '-100px',
+            opacity: 0,
+        },
+        sol1Initial: {
+            x: '100px',
+            y: '-100px',
+            opacity: 0,
+        },
+        sol2Initial: {
+            x: '100px',
+            y: '100px',
+            opacity: 0,
+        },
+        sol3Initial: {
+            x: '-100px',
+            y: '100px',
+            opacity: 0,
+        },
+        hasta: {
+            x: '0px',
+            y: '0px',
+            opacity: 1,
+            transition: { duration: 1 },
+        },
     };
     return (
         <>
-            <div className={classes.contenedorSoles}>
+            <motion.div
+                className={classes.contenedorSoles}
+                variants={containerVariants}
+            >
                 <motion.div
                     className={classes.sol0}
                     variants={containerVariants}
-                    initial="sol0"
-                    // animate={
-                    //     solClickado
-                    //         ? solActivo === 'sol0'
-                    //             ? 'to'
-                    //             : 'inactivo'
-                    //         : ''
-                    // }
-                    // onClick={centrar}
+                    initial={['sol0Initial', 'sol0']}
                     animate={[
                         'mover',
+                        'hasta',
                         solClickado
                             ? solActivo === 'sol0'
                                 ? 'to'
@@ -99,9 +121,10 @@ const Projects = () => {
                 <motion.div
                     className={classes.sol1}
                     variants={containerVariants}
-                    initial="sol1"
+                    initial={['sol1Initial', 'sol1']}
                     animate={[
                         'mover',
+                        'hasta',
                         solClickado
                             ? solActivo === 'sol1'
                                 ? 'to'
@@ -117,9 +140,10 @@ const Projects = () => {
                 <motion.div
                     className={classes.sol2}
                     variants={containerVariants}
-                    initial="sol2"
+                    initial={['sol2Initial', 'sol2']}
                     animate={[
                         'mover',
+                        'hasta',
                         solClickado
                             ? solActivo === 'sol2'
                                 ? 'to'
@@ -135,9 +159,10 @@ const Projects = () => {
                 <motion.div
                     className={classes.sol3}
                     variants={containerVariants}
-                    initial="sol3"
+                    initial={['sol3Initial', 'sol3']}
                     animate={[
                         'mover',
+                        'hasta',
                         solClickado
                             ? solActivo === 'sol3'
                                 ? 'to'
@@ -150,7 +175,7 @@ const Projects = () => {
                         <CoomingSoon />
                     </Sun>
                 </motion.div>
-            </div>
+            </motion.div>
         </>
     );
 };

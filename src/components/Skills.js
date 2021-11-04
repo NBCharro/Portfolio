@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from 'framer-motion';
 import Esfera from './Esfera';
 import classes from './Skills.module.css';
 
@@ -19,25 +20,57 @@ const Skills = (props) => {
             parrafo3: `Soy una persona curiosa, a la que le apasiona la programación, la naturaleza, los perros, los libros y las películas. Me encanta mirar fijamente una pantalla no muy brillante mientras alcanzo la solución al código que lleva días dándome errores de compilación.`,
         };
     }
+    const containerVariants = {
+        textoInitial: { x: '-500px', opacity: 0, rotateY: 90 },
+        textoAnimate: {
+            x: '0px',
+            opacity: 1,
+            rotateY: 0,
+            zIndex: '-1',
+            transition: { duration: 1 },
+        },
+        esferaInitial: { x: '500px', opacity: 0, rotateY: -90 },
+        esferaAnimate: {
+            x: '0px',
+            opacity: 1,
+            rotateY: 0,
+            zIndex: '-1',
+            transition: { duration: 1 },
+        },
+    };
     return (
         <div className={classes.contenedor}>
-            <div className={classes.texto}>
-                <p className={classes.estiloTag}>{'<h2>'}</p>
-                <h2 className={classes.titulo}>{texto.titulo}</h2>
-                <p className={classes.estiloTag}>{'</h2>'}</p>
-                <p className={classes.estiloTag}>{'<p>'}</p>
-                <p>{texto.parrafo1}</p>
-                <p className={classes.parrafo2}>{texto.parrafo2}</p>
-                <p>{texto.parrafo3}</p>
-                <p className={classes.estiloTag}>{'</p>'}</p>
-            </div>
-            <div className={classes.esferaGrupo}>
-                <p className={classes.estiloTag}>{'<div>'}</p>
-                <div className={classes.esfera}>
-                    <Esfera />
-                </div>
-                <p className={classes.estiloTag}>{'</div>'}</p>
-            </div>
+            <AnimatePresence>
+                <motion.div
+                    className={classes.texto}
+                    key="texto"
+                    variants={containerVariants}
+                    initial="textoInitial"
+                    animate="textoAnimate"
+                >
+                    <p className={classes.estiloTag}>{'<h2>'}</p>
+                    <h2 className={classes.titulo}>{texto.titulo}</h2>
+                    <p className={classes.estiloTag}>{'</h2>'}</p>
+                    <p className={classes.estiloTag}>{'<p>'}</p>
+                    <p>{texto.parrafo1}</p>
+                    <p className={classes.parrafo2}>{texto.parrafo2}</p>
+                    <p>{texto.parrafo3}</p>
+                    <p className={classes.estiloTag}>{'</p>'}</p>
+                </motion.div>
+                <motion.div
+                    className={classes.esferaGrupo}
+                    key="esfera"
+                    variants={containerVariants}
+                    initial="esferaInitial"
+                    animate="esferaAnimate"
+                >
+                    <p className={classes.estiloTag}>{'<div>'}</p>
+                    <div className={classes.esfera}>
+                        <Esfera />
+                    </div>
+                    <p className={classes.estiloTag}>{'</div>'}</p>
+                </motion.div>
+            </AnimatePresence>
         </div>
     );
 };
