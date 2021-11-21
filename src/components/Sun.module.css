@@ -18,6 +18,9 @@
     position: absolute;
     width: 100%;
 }
+.cover:hover{
+	cursor: pointer;
+}
 
 /* 
 Colores del Sol:

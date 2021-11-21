@@ -62,30 +62,30 @@ const Projects = () => {
             boxShadow: '0 0 0px 0px #ed2408',
             transition: { duration: 1 },
         },
-        mover: {
-            filter: ['contrast(100%)', 'contrast(150%)', 'contrast(100%)'],
-            transition: { repeat: Infinity, duration: 5, ease: 'linear' },
-        },
         sol0Initial: {
-            x: '-100px',
+			x: '-100px',
             y: '-100px',
             opacity: 0,
         },
         sol1Initial: {
-            x: '100px',
+			x: '100px',
             y: '-100px',
             opacity: 0,
         },
         sol2Initial: {
-            x: '100px',
+			x: '100px',
             y: '100px',
             opacity: 0,
         },
         sol3Initial: {
-            x: '-100px',
+			x: '-100px',
             y: '100px',
             opacity: 0,
         },
+		mover: {
+			filter: ['contrast(100%)', 'contrast(150%)', 'contrast(100%)'],
+			transition: { repeat: Infinity, duration: 5, ease: 'linear' },
+		},
         hasta: {
             x: '0px',
             y: '0px',

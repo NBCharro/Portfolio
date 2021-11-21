@@ -1,0 +1,33 @@
+.submitBtn {
+	width: 150px;
+	height: 54px;
+    /* border: 2px solid #d9ffff; */
+	border-radius: 60px;
+}
+
+.submitBtn img {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    animation: mymove 3s infinite linear;
+	margin-left: 50px;
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Movil */
+@media only screen and (max-width: 767px) {
+    .submitBtn {
+        width: 100%;
+        float: left;
+        border-radius: 0px;
+    }
+}

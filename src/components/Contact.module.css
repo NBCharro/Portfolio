@@ -1,3 +1,9 @@
+.contacto {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10vh;
+}
+
 input,
 textarea {
     border: none;
@@ -40,11 +46,7 @@ input[type='number'] {
 ::placeholder {
     color: #fafafa;
 }
-.contacto {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10vh;
-}
+
 .contacto textarea {
     resize: none;
 }
@@ -61,6 +63,7 @@ input[type='number'] {
     float: right;
     color: #d9ffff;
     border: 2px solid #d9ffff;
+	border-radius: 60px;
     width: 150px;
     height: 50px;
     padding: 0;
