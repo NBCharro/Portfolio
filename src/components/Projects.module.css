@@ -1,0 +1,77 @@
+.sol0 {
+    position: absolute;
+    top: 350px;
+    left: 20%;
+}
+.sol1 {
+    position: absolute;
+    top: 250px;
+    left: 55%;
+}
+.sol2 {
+    position: absolute;
+    top: 650px;
+    left: 75%;
+}
+.sol3 {
+    position: absolute;
+    top: 650px;
+    left: 40%;
+}
+.contenedorSoles {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+}
+.texto {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 640px) {
+    .sol0 {
+        top: 160px;
+        left: 25%;
+    }
+    .sol1 {
+        top: 220px;
+        left: 75%;
+    }
+    .sol2 {
+        top: 500px;
+        left: 70%;
+    }
+    .sol3 {
+        position: absolute;
+        top: 380px;
+        left: 25%;
+    }
+}
+@media only screen and (min-width: 641) and (max-width: 1080px) {
+    .sol0 {
+        top: 150px;
+        left: 0%;
+    }
+    .sol1 {
+        top: 150px;
+        left: 75%;
+    }
+    .sol2 {
+        top: 400px;
+        left: 60%;
+    }
+    .sol3 {
+        position: absolute;
+        top: 450px;
+        left: 20%;
+    }
+}

@@ -1,0 +1,169 @@
+.contenedor {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 200px);
+}
+
+/* NUCLEO */
+.proton,
+.proton2 {
+    background-color: #d9ffff;
+    border: 3px solid purple;
+    -webkit-box-shadow: 0 0 30px white;
+    box-shadow: 0 0 30px white;
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.proton {
+    left: calc(50% - 75px);
+    top: calc(50% - 50px);
+}
+.proton2 {
+    left: calc(50% - 25px);
+    top: calc(50% - 50px);
+}
+.neutron,
+.neutron2 {
+    background-color: #d9ffff;
+    border: 3px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.neutron {
+    left: calc(50% - 50px);
+    top: calc(50% - 60px);
+}
+.neutron2 {
+    left: calc(50% - 45px);
+    top: calc(50% - 40px);
+}
+
+/* ELECTRONES */
+.electron,
+.electron2 {
+    background: #d9ffff;
+    border: 3px solid purple;
+    -webkit-box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px white;
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    animation: orbit 40s linear infinite reverse;
+    -webkit-animation: orbit 40s linear infinite reverse;
+}
+.electron {
+    left: calc(50% - 175px);
+    top: calc(50% - 25px);
+}
+.electron2 {
+    left: calc(50% + 125px);
+    top: calc(50% - 25px);
+}
+.electronOrbita {
+    animation: orbit 40s linear infinite;
+    -webkit-animation: orbit 40s linear infinite;
+    height: 400px;
+    width: 400px;
+}
+.estela {
+    width: 310px;
+    height: 310px;
+    border: 10px solid grey;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    rotate: 25;
+}
+
+/* HOVER */
+.electron:hover,
+.electron2:hover {
+    cursor: pointer;
+    background-color: #00e8fc;
+    border-color: #c3e6e6;
+    -webkit-box-shadow: 0 0 20px #00e8fc;
+    box-shadow: 0 0 20px #00e8fc;
+}
+.proton:hover,
+.proton2:hover {
+    cursor: pointer;
+    background-color: #00e8fc;
+    border-color: #c3e6e6;
+    -webkit-box-shadow: 0 0 20px #00e8fc;
+    box-shadow: 0 0 20px #00e8fc;
+}
+.electron[direccion]:hover:after,
+.electron2[direccion]:hover:after,
+.proton[direccion]:hover:after,
+.proton2[direccion]:hover:after {
+    content: attr(direccion);
+    color: black;
+    background-color: #c3e6e6;
+    border: 2px solid purple;
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 4;
+}
+
+/* ANIMATIONS */
+.AnimacionPausada {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+@-webkit-keyframes orbit {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes orbit {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1080px) {
+    .electron[direccion]:after,
+    .electron2[direccion]:after,
+    .proton[direccion]:after,
+    .proton2[direccion]:after {
+        content: attr(direccion);
+        color: black;
+        background-color: #c3e6e6;
+        border: 3px solid purple;
+        text-align: center;
+        border-radius: 10px;
+        padding: 4px 8px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 4;
+    }
+    .proton[direccion]:after {
+        left: 5px;
+        top: 55%;
+    }
+    .proton2[direccion]:after {
+        left: 0px;
+        top: 25%;
+    }
+    .electron[direccion]:after,
+    .electron2[direccion]:after {
+        left: -15px;
+        top: 20%;
+        width: 60px;
+    }
+}

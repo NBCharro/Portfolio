@@ -1,0 +1,25 @@
+/* Colores:
+#00e8fc
+#000000
+#364040
+#D9FFFF
+ */
+
+/*Font-size:
+Titulos: 48px
+Subtitulos: 24px
+Textos: 16px
+estiloTag: 14px
+*/
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: #000000;
+    color: #d9ffff;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}

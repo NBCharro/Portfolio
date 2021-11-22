@@ -1,2 +1,3 @@
-Portfolio en creacion.
-Revisar las distintas branches para revisar el proceso.
+# Portfolio
+
+Creacion de portfolio mediante ReactJS y Framer
