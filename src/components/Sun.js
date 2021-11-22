@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import classes from './Sun.module.css';
 
 const Sun = (props) => {
-	const [hoverSol, setHoverSol] = useState(false);
 	const clicked = (e) => {
 		e.preventDefault();
 		if (e.target.name === 'Ecolegas') { return }
 		props.clickado(props.nombre);
-		setHoverSol((prev) => !prev);
 	};
 	return (
 		<>
@@ -15,11 +12,11 @@ const Sun = (props) => {
 				<div
 					className={classes.cover}
 					style={{
-						backgroundImage: `url(${!hoverSol && props.imagen})`,
+						backgroundImage: `url(${!props.sol && props.imagen})`,
 					}}
 				>
 					<div className={classes.Hijo}>
-						{hoverSol && props.children}
+						{props.sol && props.children}
 					</div>
 				</div>
 			</div>

@@ -100,8 +100,18 @@ const Projects = (props) => {
 			},
 		},
 	};
+	const salirSol = () => {
+		if (
+			solClickado === true
+			// const [solActivo, setSolActivo] = useState('');
+		) {
+			setSolClickado(false)
+		}
+	}
 	return (
-		<>
+		<div
+			onClick={salirSol}
+		>
 			<motion.div
 				className={classes.contenedorSoles}
 				variants={containerVariants}
@@ -122,7 +132,7 @@ const Projects = (props) => {
 					]}
 					onClick={centrar}
 				>
-					<Sun imagen={SolFoto} clickado={onSubmit} nombre="sol0">
+					<Sun imagen={SolFoto} clickado={onSubmit} nombre="sol0" sol={solClickado}>
 						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
@@ -141,7 +151,7 @@ const Projects = (props) => {
 					]}
 					onClick={centrar}
 				>
-					<Sun imagen={SolFoto4} clickado={onSubmit} nombre="sol1">
+					<Sun imagen={SolFoto4} clickado={onSubmit} nombre="sol1" sol={solClickado}>
 						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
@@ -160,7 +170,7 @@ const Projects = (props) => {
 					]}
 					onClick={centrar}
 				>
-					<Sun imagen={SolFoto2} clickado={onSubmit} nombre="sol2" >
+					<Sun imagen={SolFoto2} clickado={onSubmit} nombre="sol2" sol={solClickado}>
 						<Ecolegas idioma={props.idioma} />
 					</Sun>
 				</motion.div>
@@ -179,12 +189,12 @@ const Projects = (props) => {
 					]}
 					onClick={centrar}
 				>
-					<Sun imagen={SolFoto3} clickado={onSubmit} nombre="sol3">
+					<Sun imagen={SolFoto3} clickado={onSubmit} nombre="sol3" sol={solClickado}>
 						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
 			</motion.div>
-		</>
+		</div>
 	);
 };
 
