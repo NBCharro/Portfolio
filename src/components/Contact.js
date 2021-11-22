@@ -87,10 +87,10 @@ const Contact = (props) => {
 
 		// setTimeout(() => {
 		// 	setLoading(false);
-		// 	// openModalHandler('Ok');
+		// 	openModalHandler('Ok');
 		// 	// openModalHandler('Error');
 		// 	// openModalHandler('Telefono');
-		// 	openModalHandler('Nombre');
+		// 	// openModalHandler('Nombre');
 		// }, 1000);
 	}
 	return (

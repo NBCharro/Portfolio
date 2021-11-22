@@ -34,7 +34,7 @@ const Skills = (props) => {
 			x: '0px',
 			opacity: 1,
 			rotateY: 0,
-			zIndex: '-1',
+			zIndex: '1',
 			transition: { duration: 1 },
 		},
 	};

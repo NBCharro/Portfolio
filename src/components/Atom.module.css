@@ -2,9 +2,7 @@
     height: 400px;
     width: 400px;
     position: absolute;
-    /* top: calc(50% - 200px); */
     left: calc(50% - 200px);
-    /* border: 2px solid blue; */
 }
 
 /* NUCLEO */
@@ -12,6 +10,7 @@
 .proton2 {
     background-color: #d9ffff;
     border: 3px solid purple;
+    -webkit-box-shadow: 0 0 30px white;
     box-shadow: 0 0 30px white;
     border-radius: 50%;
     position: absolute;
@@ -49,6 +48,7 @@
 .electron2 {
     background: #d9ffff;
     border: 3px solid purple;
+    -webkit-box-shadow: 0 0 20px white;
     box-shadow: 0 0 20px white;
     border-radius: 50%;
     position: absolute;
@@ -70,14 +70,13 @@
     -webkit-animation: orbit 40s linear infinite;
     height: 400px;
     width: 400px;
-    /* left: 50px;
-    top: 50px; */
 }
 .estela {
     width: 310px;
     height: 310px;
     border: 10px solid grey;
     border-radius: 50%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     top: calc(50% - 150px);
@@ -91,6 +90,7 @@
     cursor: pointer;
     background-color: #00e8fc;
     border-color: #c3e6e6;
+    -webkit-box-shadow: 0 0 20px #00e8fc;
     box-shadow: 0 0 20px #00e8fc;
 }
 .proton:hover,
@@ -98,6 +98,7 @@
     cursor: pointer;
     background-color: #00e8fc;
     border-color: #c3e6e6;
+    -webkit-box-shadow: 0 0 20px #00e8fc;
     box-shadow: 0 0 20px #00e8fc;
 }
 .electron[direccion]:hover:after,
@@ -115,19 +116,20 @@
     z-index: 4;
 }
 
-/* ANIMACION */
+/* ANIMATIONS */
 .AnimacionPausada {
+    -webkit-animation-play-state: paused;
     animation-play-state: paused;
 }
-
 @-webkit-keyframes orbit {
     to {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
-
 @keyframes orbit {
     to {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }

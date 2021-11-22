@@ -20,6 +20,7 @@ const Projects = () => {
 	const pantalla = window.innerWidth;
 	const pantallavertical = window.innerHeight;
 	const centrar = (e) => {
+		if (e.target.name === 'Ecolegas') { return }
 		setCoordenadas([
 			e.target.parentElement.parentElement.offsetTop,
 			e.target.parentElement.parentElement.offsetLeft,
@@ -159,7 +160,7 @@ const Projects = () => {
 					]}
 					onClick={centrar}
 				>
-					<Sun imagen={SolFoto2} clickado={onSubmit} nombre="sol2">
+					<Sun imagen={SolFoto2} clickado={onSubmit} nombre="sol2" >
 						<Ecolegas />
 					</Sun>
 				</motion.div>

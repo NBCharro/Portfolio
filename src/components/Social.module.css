@@ -19,6 +19,7 @@
     fill: #00e8fc;
 }
 
+/* HOVER */
 .social a:hover {
     cursor: default;
 }
@@ -28,8 +29,17 @@
     -webkit-animation: animacionSVG 1s forwards;
 }
 
+/* ANIMATIONS */
+@-webkit-keyframes animacionSVG {
+    to {
+        -webkit-transform: rotate(-360deg) scale(2, 2);
+        transform: rotate(-360deg) scale(2, 2);
+    }
+}
+
 @keyframes animacionSVG {
     to {
+        -webkit-transform: rotate(-360deg) scale(2, 2);
         transform: rotate(-360deg) scale(2, 2);
     }
 }

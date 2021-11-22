@@ -1,71 +1,24 @@
-/* Colors
-Hydrogen: #FFFFFF
-Helium: #D9FFFF
-Palette:
-#000000
-#ffffff
-#d9ffff
-#48cecb
-#246766
-#BAE8DB
-#CCFFE2
-#BADCE8
-#CCE4FF
-#ADCCCC
-#468080
-#8CFFFF
-#FFF5BF
-#B38B74
-#FFE7D9
-#456D99
-#6C8080
-#A3BFBF
-#C3E6E6
-Elegidos:
-#C3E6E6
-#A3BFBF
-#CCFFE2
-
+/* Colores:
 #00e8fc
 #000000
 #364040
 #D9FFFF
  */
-/* Tipos de letra:
-Inconsolata => https://fonts.google.com/specimen/Inconsolata
-Rajdhani => https://fonts.google.com/specimen/Rajdhani
-Arvo => https://fonts.google.com/specimen/Arvo
-Exo 2 => https://fonts.google.com/specimen/Exo+2
-Xanh Mono => https://fonts.google.com/specimen/Xanh+Mono
-Trochut => https://fonts.google.com/specimen/Trochut
-Bungee Hairline => https://fonts.google.com/specimen/Bungee+Hairline
-Viaoda Libre => https://fonts.google.com/specimen/Viaoda+Libre
-Courier Prime => https://fonts.google.com/specimen/Courier+Prime
- 
-firma:
- Nothing You Could Do => https://fonts.google.com/specimen/Nothing+You+Could+Do
- Shadows Into Light => https://fonts.google.com/specimen/Shadows+Into+Light
- Satisfy => https://fonts.google.com/specimen/Satisfy
- Indie Flower => https://fonts.google.com/specimen/Indie+Flower
- Caveat => https://fonts.google.com/specimen/Caveat
 
-Font-size:
- Titulos: 48px
- Subtitulos: 24px
- Textos: 16px
- estiloTag: 14px
-
- */
+/*Font-size:
+Titulos: 48px
+Subtitulos: 24px
+Textos: 16px
+estiloTag: 14px
+*/
 
 body {
     font-family: 'Inconsolata', monospace;
     background-color: #000000;
     color: #d9ffff;
     font-size: 16px;
-    /* overflow: hidden; */
     overflow-x: hidden;
 }
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;

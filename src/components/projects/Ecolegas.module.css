@@ -1,4 +1,5 @@
 .contenedor {
+    background: -o-linear-gradient(320deg, #364040, #402f3b);
     background: linear-gradient(130deg, #364040, #402f3b);
     background-size: 100% 100%;
     height: 100vh;
@@ -10,37 +11,43 @@
     text-align: center;
 }
 .imagen {
-    /* margin-left: 5%; */
     width: 100%;
     height: 180px;
 }
 .texto {
     text-align: center;
-    /* position: absolute;
-    left: 5%; */
     width: 90%;
     margin-left: 5%;
 }
 .boton {
-    background-color: transparent;
-    color: #d9ffff;
-    border-color: #d9ffff;
-    font-size: 1.1em;
-    width: 40%;
     position: absolute;
     left: 30%;
     margin-top: 15px;
-}
-.link,
-.link:link,
-.link:visited,
-.link:hover,
-.link:active {
-    text-decoration: none;
     color: #d9ffff;
+    border: 2px solid #d9ffff;
+    border-radius: 60px;
+    width: 150px;
+    height: 50px;
+    background: -webkit-gradient(
+            linear,
+            right top,
+            left top,
+            color-stop(50%, transparent),
+            color-stop(50%, #d9ffff)
+        )
+        right;
+    background: -o-linear-gradient(right, transparent 50%, #d9ffff 50%) right;
+    background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
+    background-size: 200%;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-size: 24px;
 }
 
+/* HOVER */
 .boton:hover {
-    border-color: red;
     cursor: pointer;
+    background-position: left;
+    color: black;
 }

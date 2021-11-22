@@ -3,13 +3,14 @@
     margin-left: 20%;
     margin-top: 10vh;
 }
-
 input,
 textarea {
     border: none;
     padding: 1rem;
     width: 100%;
     height: 40%;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
     transition: 200ms;
 }
 input[type='text'],
@@ -23,7 +24,6 @@ textarea {
     background: transparent;
     color: #d9ffff;
     font-size: 16px;
-    /* box-shadow: none; */
     outline: none;
 }
 input[type='text']:focus,
@@ -43,10 +43,21 @@ input[type='number']::-webkit-outer-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
-::placeholder {
-    color: #fafafa;
+::-webkit-input-placeholder {
+    color: #364040;
 }
-
+::-moz-placeholder {
+    color: #364040;
+}
+:-ms-input-placeholder {
+    color: #364040;
+}
+::-ms-input-placeholder {
+    color: #364040;
+}
+::placeholder {
+    color: #364040;
+}
 .contacto textarea {
     resize: none;
 }
@@ -63,24 +74,30 @@ input[type='number'] {
     float: right;
     color: #d9ffff;
     border: 2px solid #d9ffff;
-	border-radius: 60px;
+    border-radius: 60px;
     width: 150px;
     height: 50px;
     padding: 0;
     margin: 5px 0;
+    background: -webkit-gradient(
+            linear,
+            right top,
+            left top,
+            color-stop(50%, transparent),
+            color-stop(50%, #d9ffff)
+        )
+        right;
+    background: -o-linear-gradient(right, transparent 50%, #d9ffff 50%) right;
     background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
     background-size: 200%;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
     font-size: 24px;
 }
 .divBoton {
     float: right;
     margin-top: 25px;
-}
-.boton:hover {
-    cursor: pointer;
-    background-position: left;
-    color: black;
 }
 .titulo {
     font-family: 'Indie Flower', cursive;
@@ -97,6 +114,14 @@ input[type='number'] {
     margin-left: -25px;
 }
 
+/* HOVER */
+.boton:hover {
+    cursor: pointer;
+    background-position: left;
+    color: black;
+}
+
+/* RESPONSIVE DESIGN */
 @media only screen and (max-width: 640px) {
     .contacto {
         width: 90%;
