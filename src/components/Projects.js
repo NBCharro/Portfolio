@@ -9,7 +9,7 @@ import classes from './Projects.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const Projects = () => {
+const Projects = (props) => {
 	const [solClickado, setSolClickado] = useState(false);
 	const [solActivo, setSolActivo] = useState('');
 	const [coordenadas, setCoordenadas] = useState([]);
@@ -123,7 +123,7 @@ const Projects = () => {
 					onClick={centrar}
 				>
 					<Sun imagen={SolFoto} clickado={onSubmit} nombre="sol0">
-						<CoomingSoon />
+						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
 				<motion.div
@@ -142,7 +142,7 @@ const Projects = () => {
 					onClick={centrar}
 				>
 					<Sun imagen={SolFoto4} clickado={onSubmit} nombre="sol1">
-						<CoomingSoon />
+						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
 				<motion.div
@@ -161,7 +161,7 @@ const Projects = () => {
 					onClick={centrar}
 				>
 					<Sun imagen={SolFoto2} clickado={onSubmit} nombre="sol2" >
-						<Ecolegas />
+						<Ecolegas idioma={props.idioma} />
 					</Sun>
 				</motion.div>
 				<motion.div
@@ -180,7 +180,7 @@ const Projects = () => {
 					onClick={centrar}
 				>
 					<Sun imagen={SolFoto3} clickado={onSubmit} nombre="sol3">
-						<CoomingSoon />
+						<CoomingSoon idioma={props.idioma} />
 					</Sun>
 				</motion.div>
 			</motion.div>

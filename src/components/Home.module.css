@@ -183,7 +183,7 @@
     animation: enterColor 9s ease-in infinite;
     z-index: 2;
     position: absolute;
-    top: calc(65% - 50px);
+    top: calc(70% - 50px);
     left: calc(50% - 50px);
 }
 
@@ -193,7 +193,7 @@
     color: #d9ffff;
 }
 
-/* RESPONSIVE DESIGN */
+/* ANIMATIONS */
 @-webkit-keyframes drain {
     0% {
         opacity: 0;
@@ -230,7 +230,7 @@
 
     100% {
         opacity: 0;
-        top: 65%;
+        top: 75%;
         left: 50%;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -258,11 +258,10 @@
     .home {
         width: 90%;
         height: auto;
-        top: 5%;
         left: 5%;
     }
     .boton {
-        top: calc(74% - 50px);
+        top: calc(75% - 50px);
     }
 }
 @media only screen and (min-width: 641px) and (max-width: 1080px) {
