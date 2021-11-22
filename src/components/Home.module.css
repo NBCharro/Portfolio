@@ -93,26 +93,6 @@
     }
 }
 
-/* RESPONSIVE DESIGN */
-@media only screen and (max-width: 640px) {
-    .home {
-        width: 90%;
-        height: auto;
-        /* margin-top: 50px;
-        margin-left: 5%; */
-        top: 10%;
-        left: 5%;
-    }
-}
-@media only screen and (min-width: 641px) and (max-width: 1080px) {
-    .home {
-        width: 80%;
-        height: auto;
-        /* margin: 150px auto; */
-        top: 10%;
-        left: 10%;
-    }
-}
 /* BLACK HOLE */
 .star {
     z-index: -1;
@@ -194,5 +174,26 @@
     }
     50% {
         color: #d9ffff;
+    }
+}
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 640px) {
+    .home {
+        width: 90%;
+        height: auto;
+        top: 5%;
+        left: 5%;
+    }
+    .boton {
+        top: calc(74% - 50px);
+    }
+}
+@media only screen and (min-width: 641px) and (max-width: 1080px) {
+    .home {
+        width: 80%;
+        height: auto;
+        /* margin: 150px auto; */
+        top: 7%;
+        left: 10%;
     }
 }

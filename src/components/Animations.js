@@ -42,8 +42,13 @@ const Animations = (props) => {
 		}
 	};
 	const containerVariants = {
+		atomoHover: {
+			scale: 1
+		},
 		atomo: {
 			scale: 0,
+			position: 'relative',
+			zIndex: 4,
 		},
 		atomoAnimate: {
 			y: ['25px', '50px', '-75px', '150px'],
@@ -52,29 +57,27 @@ const Animations = (props) => {
 			transition: { duration: 1 },
 		},
 		atomoExit: {
-			scale: 0,
+			opacity: 0,
 			transition: { duration: 1 },
 		},
-		// REVISADO
 		Home: {
-			y: '150px',
+			y: '100px',
 		},
 		exitHome: {
-			scale: 0,
 			opacity: 0,
-			y: '90vh',
 			transition: { duration: 1 },
 		},
 		atomoPulsado: {
 			y: '0%',
 			x: '30%',
-			scale: 0.35,
+			scale: 0.4,
 			transition: { duration: 1 },
 		},
 		skillsExit: {
-			y: '-100px',
 			opacity: 0,
-			transition: { duration: 1 },
+			transition: {
+				duration: 1
+			},
 		},
 		contact: {
 			y: '100px',
@@ -89,11 +92,10 @@ const Animations = (props) => {
 			transition: { duration: 1 },
 		},
 		contactExit: {
-			y: '-100px',
-			position: 'relative',
-			zIndex: -1,
 			opacity: 0,
-			transition: { duration: 1 },
+			transition: {
+				duration: 1
+			},
 		},
 	};
 	return (
@@ -112,7 +114,8 @@ const Animations = (props) => {
 								: 'atomoAnimate'
 						}
 						exit="atomoExit"
-						whileHover={{ scale: 1 }}
+						whileHover='atomoHover'
+
 					>
 						<Atom
 							idioma={props.idioma}

@@ -112,7 +112,7 @@
     position: absolute;
     left: 0;
     top: 100%;
-    z-index: 2;
+    z-index: 4;
 }
 
 /* ANIMACION */
@@ -148,7 +148,7 @@
         position: absolute;
         left: 0;
         top: 100%;
-        z-index: 2;
+        z-index: 4;
     }
     .proton[direccion]:after {
         left: 5px;
