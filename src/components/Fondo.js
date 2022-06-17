@@ -1,4 +1,5 @@
 import Tardis from './Tardis';
+import Menu from './Menu';
 import classes from './Fondo.module.css';
 
 const Fondo = (props) => {
@@ -10,6 +11,7 @@ const Fondo = (props) => {
 				<div className={classes.stars} />
 				<div className={classes.twinkling} />
 			</div>
+			<Menu />
 			<div onClick={props.cambiarIdioma} className={classes.idioma}>
 				<span
 					className={

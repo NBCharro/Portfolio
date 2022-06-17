@@ -32,6 +32,10 @@
 .idioma {
     text-align: right;
     cursor: pointer;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 90%;
 }
 .active {
     color: #c3e6e6;
