@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Home from './Home';
-import Atom from './Atom';
+import Navbar from './navbar/Navbar';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
 
 const Animations = (props) => {
 	const [acceder, setAcceder] = useState(true);
-	const [atomo, setAtomo] = useState(false);
 	const [proyectos, setProyectos] = useState(false);
 	const [skills, setSkills] = useState(false);
 	const [contacto, setContacto] = useState(false);
 	const entrarHandler = () => {
 		setAcceder(false);
 		setTimeout(() => {
-			setAtomo(true);
+			setSkills(true);
 		}, 2000);
 	};
 	const ocultarComponentes = () => {
+		setAcceder(false);
 		setProyectos(false);
 		setSkills(false);
 		setContacto(false);
@@ -26,7 +26,6 @@ const Animations = (props) => {
 	const mostrarComponentes = (componente) => {
 		ocultarComponentes();
 		if (componente === 'Home' || componente === 'Inicio') {
-			setAtomo(false);
 			setTimeout(() => {
 				setAcceder(true);
 			}, 2000);
@@ -100,30 +99,7 @@ const Animations = (props) => {
 	};
 	return (
 		<>
-			<AnimatePresence>
-				{atomo && (
-					<motion.div
-						key="atom"
-						variants={containerVariants}
-						initial="atomo"
-						animate={
-							proyectos === true ||
-								skills === true ||
-								contacto === true
-								? 'atomoPulsado'
-								: 'atomoAnimate'
-						}
-						exit="atomoExit"
-						whileHover='atomoHover'
-
-					>
-						<Atom
-							idioma={props.idioma}
-							mostrarComponentes={mostrarComponentes}
-						/>
-					</motion.div>
-				)}
-			</AnimatePresence>
+			<Navbar idioma={props.idioma} mostrarComponentes={mostrarComponentes} />
 			<AnimatePresence exitBeforeEnter>
 				{acceder && (
 					<motion.div

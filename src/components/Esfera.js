@@ -12,6 +12,12 @@ import visualstudiocodeSVG from 'simple-icons/icons/visualstudiocode';
 import figmaSVG from 'simple-icons/icons/figma';
 import javaSVG from 'simple-icons/icons/java';
 import wordpressSVG from 'simple-icons/icons/wordpress';
+import sqlSVG from 'simple-icons/icons/mysql';
+import linuxSVG from 'simple-icons/icons/linux';
+import netbeansSVG from 'simple-icons/icons/apachenetbeanside';
+import eclipseSVG from 'simple-icons/icons/eclipseide';
+
+
 import './Esfera.module.css';
 
 const Esfera = () => {
@@ -47,6 +53,10 @@ const Esfera = () => {
 		{ id: 'figma', simpleIcon: figmaSVG },
 		{ id: 'java', simpleIcon: javaSVG },
 		{ id: 'wordpress', simpleIcon: wordpressSVG },
+		{ id: 'sql', simpleIcon: sqlSVG },
+		{ id: 'linux', simpleIcon: linuxSVG },
+		{ id: 'Netbeans', simpleIcon: netbeansSVG },
+		{ id: 'Eclipse', simpleIcon: eclipseSVG },
 	];
 	return (
 		<IconCloud
