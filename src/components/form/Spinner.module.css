@@ -1,46 +1,49 @@
 .submitBtn {
-    width: 150px;
-    height: 54px;
-    border-radius: 60px;
+	width: 150px;
+	height: 54px;
+	border-radius: 60px;
 }
+
 .submitBtn img {
-    width: 50px;
-    height: 50px;
-    margin: 0px;
-    padding: 0px;
-    -webkit-animation: mymove 3s infinite linear;
-    animation: mymove 3s infinite linear;
-    margin-left: 50px;
+	width: 50px;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	-webkit-animation: mymove 3s infinite linear;
+	animation: mymove 3s infinite linear;
+	margin-left: 50px;
 }
 
 /* ANIMATIONS */
 @-webkit-keyframes mymove {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes mymove {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 767px) {
-    .submitBtn {
-        width: 100%;
-        float: left;
-        border-radius: 0px;
-    }
+	.submitBtn {
+		width: 100%;
+		float: left;
+		border-radius: 0px;
+	}
 }

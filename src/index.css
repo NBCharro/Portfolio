@@ -13,13 +13,14 @@ estiloTag: 14px
 */
 
 body {
-    font-family: 'Inconsolata', monospace;
-    background-color: #000000;
-    color: #d9ffff;
-    font-size: 16px;
-    overflow-x: hidden;
+	font-family: 'Inconsolata', monospace;
+	background-color: #000000;
+	color: #d9ffff;
+	font-size: 16px;
+	overflow-x: hidden;
 }
+
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }

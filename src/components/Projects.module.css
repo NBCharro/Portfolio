@@ -1,20 +1,20 @@
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1280px;
-  margin: auto;
-  padding: 0px 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1280px;
+	margin: auto;
+	padding: 0px 50px;
 }
 
 @media screen and (max-width: 720px) {
-  .container {
-    flex-direction: column;
-	height: 120vh;
-  }
+	.container {
+		flex-direction: column;
+		padding-top: 25px;
+	}
 
-  .container > *:not(:last-child) {
-    margin-bottom: 20px;
-  }
+	.container>*:not(:last-child) {
+		margin-bottom: 20px;
+	}
 }

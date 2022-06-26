@@ -30,10 +30,12 @@ const Navbar = (props) => {
 		setToggle(!isToggled);
 	};
 
+	const esMovil = true;
+
 	return (
 		<>
 			<button className={classes.btn} onClick={() => setToggle(!isToggled)}>
-				=
+				{!isToggled ? "=" : "x"}
 			</button>
 			<AnimatePresence>
 				{isToggled && (
@@ -44,7 +46,7 @@ const Navbar = (props) => {
 						exit="hidden"
 						variants={navContainer}
 					>
-						<NavbarItems isToggled={isToggled} idioma={props.idioma} mostrarComponente={mostrarComponentes} />
+						<NavbarItems isToggled={isToggled} idioma={props.idioma} mostrarComponente={mostrarComponentes} esMovil={esMovil} />
 					</motion.div>
 				)}
 			</AnimatePresence>

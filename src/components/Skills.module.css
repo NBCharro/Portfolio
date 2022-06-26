@@ -1,69 +1,79 @@
 .contenedor {
-    margin-top: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
+	margin-top: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
 }
+
 .texto {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    font-size: 24px;
-    margin-left: 5%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	font-size: 24px;
+	margin-left: 5%;
 }
+
 .parrafo2 {
-    margin: 25px auto;
+	margin: 25px auto;
 }
+
 .titulo {
-    font-family: 'Indie Flower', cursive;
-    margin: 0;
-    font-size: 48px;
-    color: #00e8fc;
+	font-family: 'Indie Flower', cursive;
+	margin: 0;
+	font-size: 48px;
+	color: #00e8fc;
 }
+
 .esferaGrupo {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
+
 .estiloTag {
-    font-family: 'Nothing You Could Do', cursive;
-    margin: 0;
-    padding: 0;
-    color: grey;
-    font-size: 14px;
+	font-family: 'Nothing You Could Do', cursive;
+	margin: 0;
+	padding: 0;
+	color: grey;
+	font-size: 14px;
 }
+
 .esfera {
-    width: 90%;
-    margin-left: 5%;
+	width: 90%;
+	margin-left: 5%;
 }
 
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 640px) {
-    .texto {
-        font-size: 18px;
-    }
-    .contenedor {
-        overflow-y: scroll;
-    }
+	.texto {
+		font-size: 18px;
+	}
+
+	.contenedor {
+		overflow-y: scroll;
+	}
 }
+
 @media only screen and (max-width: 1080px) {
-    .contenedor {
-        margin-top: 10vh;
-        display: inline;
-        height: auto;
-    }
-    .texto {
-        width: 90%;
-        margin-left: 5%;
-    }
-    .esferaGrupo {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+	.contenedor {
+		margin-top: 10vh;
+		display: inline;
+		height: auto;
+	}
+
+	.texto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.esferaGrupo {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }

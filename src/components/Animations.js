@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Home from './Home';
-import Navbar from './navbar/Navbar';
+import Navbar from './Navbar';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';

@@ -1,18 +1,20 @@
 .contacto {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10vh;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 10vh;
 }
+
 input,
 textarea {
-    border: none;
-    padding: 1rem;
-    width: 100%;
-    height: 40%;
-    -webkit-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms;
+	border: none;
+	padding: 1rem;
+	width: 100%;
+	height: 40%;
+	-webkit-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
 }
+
 input[type='text'],
 input[type='email'],
 input[type='number'],
@@ -20,12 +22,13 @@ input[type='text']:not(output):not(:focus),
 input[type='email']:not(output):not(:focus),
 input[type='number']:not(output):not(:focus),
 textarea {
-    border-bottom: 1px solid #fafafa;
-    background: transparent;
-    color: #d9ffff;
-    font-size: 16px;
-    outline: none;
+	border-bottom: 1px solid #fafafa;
+	background: transparent;
+	color: #d9ffff;
+	font-size: 16px;
+	outline: none;
 }
+
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='number']:focus,
@@ -33,121 +36,137 @@ input[type='text']:not(output):focus,
 input[type='email']:not(output):focus,
 input[type='number']:not(output):focus,
 textarea:focus {
-    border-bottom: 1px solid #00e8fc;
+	border-bottom: 1px solid #00e8fc;
 }
+
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
+
 input[type='number'] {
-    -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
+
 ::-webkit-input-placeholder {
-    color: #364040;
+	color: #364040;
 }
+
 ::-moz-placeholder {
-    color: #364040;
+	color: #364040;
 }
+
 :-ms-input-placeholder {
-    color: #364040;
+	color: #364040;
 }
+
 ::-ms-input-placeholder {
-    color: #364040;
+	color: #364040;
 }
+
 ::placeholder {
-    color: #364040;
+	color: #364040;
 }
+
 .contacto textarea {
-    resize: none;
+	resize: none;
 }
+
 .estiloTag {
-    font-family: 'Nothing You Could Do', cursive;
-    margin: 0;
-    padding: 0;
-    color: grey;
-    font-size: 14px;
-    margin-left: -15px;
-    margin-top: 5px;
+	font-family: 'Nothing You Could Do', cursive;
+	margin: 0;
+	padding: 0;
+	color: grey;
+	font-size: 14px;
+	margin-left: -15px;
+	margin-top: 5px;
 }
+
 .boton {
-    float: right;
-    color: #d9ffff;
-    border: 2px solid #d9ffff;
-    border-radius: 60px;
-    width: 150px;
-    height: 50px;
-    padding: 0;
-    margin: 5px 0;
-    background: -webkit-gradient(
-            linear,
-            right top,
-            left top,
-            color-stop(50%, transparent),
-            color-stop(50%, #d9ffff)
-        )
-        right;
-    background: -o-linear-gradient(right, transparent 50%, #d9ffff 50%) right;
-    background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
-    background-size: 200%;
-    -webkit-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
-    font-size: 24px;
+	float: right;
+	color: #d9ffff;
+	border: 2px solid #d9ffff;
+	border-radius: 60px;
+	width: 150px;
+	height: 50px;
+	padding: 0;
+	margin: 5px 0;
+	background: -webkit-gradient(linear,
+			right top,
+			left top,
+			color-stop(50%, transparent),
+			color-stop(50%, #d9ffff)) right;
+	background: -o-linear-gradient(right, transparent 50%, #d9ffff 50%) right;
+	background: linear-gradient(to left, transparent 50%, #d9ffff 50%) right;
+	background-size: 200%;
+	-webkit-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	font-size: 24px;
 }
+
 .divBoton {
-    float: right;
-    margin-top: 25px;
+	float: right;
+	margin-top: 25px;
 }
+
 .titulo {
-    font-family: 'Indie Flower', cursive;
-    margin: 0;
-    font-size: 48px;
-    color: #00e8fc;
+	font-family: 'Indie Flower', cursive;
+	margin: 0;
+	font-size: 48px;
+	color: #00e8fc;
 }
+
 .subtitulo {
-    font-size: 24px;
+	font-size: 24px;
 }
+
 .iconos {
-    float: left;
-    margin-top: 20px;
-    margin-left: -25px;
+	float: left;
+	margin-top: 20px;
+	margin-left: -25px;
 }
 
 /* HOVER */
 .boton:hover {
-    cursor: pointer;
-    background-position: left;
-    color: black;
+	cursor: pointer;
+	background-position: left;
+	color: black;
 }
 
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 640px) {
-    .contacto {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 25px;
-    }
-    .subtitulo {
-        font-size: 18px;
-        margin: 0;
-    }
-    input,
-    textarea {
-        width: 90%;
-    }
+	.contacto {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 25px;
+	}
+
+	.subtitulo {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	input,
+	textarea {
+		width: 90%;
+	}
 }
+
 @media only screen and (min-width: 641px) and (max-width: 1080px) {
-    .contacto {
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 50px;
-    }
-    .subtitulo {
-        margin: 0;
-    }
-    input,
-    textarea {
-        width: 100%;
-    }
+	.contacto {
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+
+	.subtitulo {
+		margin: 0;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
 }

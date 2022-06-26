@@ -1,9 +1,7 @@
 import Tardis from './Tardis';
-//import Navbar from './navbar/Navbar';
 import classes from './Fondo.module.css';
 
 const Fondo = (props) => {
-	//<Navbar mostrarComponente={props.mostrarComponente} />
 	return (
 		<div>
 			<div

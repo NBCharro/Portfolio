@@ -1,45 +1,51 @@
 .social {
-    float: right;
+	float: right;
 }
+
 .social svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 15px;
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
 }
+
 .twitter svg {
-    fill: #1da1f2;
+	fill: #1da1f2;
 }
+
 .linkedin svg {
-    fill: #0a66c2;
+	fill: #0a66c2;
 }
+
 .github svg {
-    fill: #ffffff;
+	fill: #ffffff;
 }
+
 .email svg {
-    fill: #00e8fc;
+	fill: #00e8fc;
 }
 
 /* HOVER */
 .social a:hover {
-    cursor: default;
+	cursor: default;
 }
+
 .social svg:hover {
-    cursor: pointer;
-    animation: animacionSVG 1s forwards;
-    -webkit-animation: animacionSVG 1s forwards;
+	cursor: pointer;
+	animation: animacionSVG 1s forwards;
+	-webkit-animation: animacionSVG 1s forwards;
 }
 
 /* ANIMATIONS */
 @-webkit-keyframes animacionSVG {
-    to {
-        -webkit-transform: rotate(-360deg) scale(2, 2);
-        transform: rotate(-360deg) scale(2, 2);
-    }
+	to {
+		-webkit-transform: rotate(-360deg) scale(2, 2);
+		transform: rotate(-360deg) scale(2, 2);
+	}
 }
 
 @keyframes animacionSVG {
-    to {
-        -webkit-transform: rotate(-360deg) scale(2, 2);
-        transform: rotate(-360deg) scale(2, 2);
-    }
+	to {
+		-webkit-transform: rotate(-360deg) scale(2, 2);
+		transform: rotate(-360deg) scale(2, 2);
+	}
 }

@@ -1,0 +1,50 @@
+.navbar {
+	position: absolute;
+	top: 50px;
+	left: 15px;
+	width: 240px;
+	height: 250px;
+	margin: none;
+	border-radius: 16px;
+	/*background-color: #364040;*/
+	/* background: linear-gradient(to top, #000000, #364040);*/
+	background: linear-gradient(-45deg, #EC84AC, #4C8C8C, #364040, #EC84AC);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	z-index: 3;
+}
+
+.navList {
+	padding: 10px 50px;
+}
+
+.navItem {
+	font-size: 20px;
+	list-style: none;
+	color: #00e8fc;
+	cursor: pointer;
+}
+
+.btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border-style: none;
+	background: #00e8fc;
+	cursor: pointer;
+	z-index: 1;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}

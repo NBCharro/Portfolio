@@ -23,7 +23,7 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					Soy un desarrollador web frontend.
+					Soy un desarrollador full-stack.
 					<br />
 					Programo interfaces interactivas centradas en la usabilidad.
 				</h1>
@@ -40,7 +40,7 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					I'm a frontend web developer.
+					I'm a full-stack developer.
 					<br />I program interactive interfaces focused on usability.
 				</h1>
 			);
