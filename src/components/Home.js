@@ -23,9 +23,9 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					Soy un desarrollador full-stack.
+					Soy un desarrollador front-end
 					<br />
-					Programo interfaces interactivas centradas en la usabilidad.
+					Programo experiencias centradas en el usuario para alcanzar los objetivos de diseño.
 				</h1>
 			);
 		}
@@ -40,8 +40,8 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					I'm a full-stack developer.
-					<br />I program interactive interfaces focused on usability.
+					I'm a front-end developer
+					<br />I program user-centered experiences to achieve design goals.
 				</h1>
 			);
 		}

@@ -1,21 +1,13 @@
 import { IconCloud } from 'react-icon-cloud';
-import typescriptSVG from 'simple-icons/icons/typescript';
-import javascriptSVG from 'simple-icons/icons/javascript';
-import css3SVG from 'simple-icons/icons/css3';
-import reactSVG from 'simple-icons/icons/react';
 import html5SVG from 'simple-icons/icons/html5';
-import firebaseSVG from 'simple-icons/icons/firebase';
+import css3SVG from 'simple-icons/icons/css3';
+import javascriptSVG from 'simple-icons/icons/javascript';
+import reactSVG from 'simple-icons/icons/react';
 import gitSVG from 'simple-icons/icons/git';
-import jiraSVG from 'simple-icons/icons/jira';
 import githubSVG from 'simple-icons/icons/github';
-import visualstudiocodeSVG from 'simple-icons/icons/visualstudiocode';
-import figmaSVG from 'simple-icons/icons/figma';
 import javaSVG from 'simple-icons/icons/java';
 import wordpressSVG from 'simple-icons/icons/wordpress';
 import sqlSVG from 'simple-icons/icons/mysql';
-import linuxSVG from 'simple-icons/icons/linux';
-import netbeansSVG from 'simple-icons/icons/apachenetbeanside';
-import eclipseSVG from 'simple-icons/icons/eclipseide';
 
 
 import './Esfera.module.css';
@@ -40,23 +32,15 @@ const Esfera = () => {
 		wheelZoom: false,
 	};
 	const iconTags = [
-		{ id: 'typescript', simpleIcon: typescriptSVG },
-		{ id: 'javascript', simpleIcon: javascriptSVG },
-		{ id: 'css3', simpleIcon: css3SVG },
-		{ id: 'react', simpleIcon: reactSVG },
 		{ id: 'html5', simpleIcon: html5SVG },
-		{ id: 'firebase', simpleIcon: firebaseSVG },
+		{ id: 'css3', simpleIcon: css3SVG },
+		{ id: 'javascript', simpleIcon: javascriptSVG },
+		{ id: 'react', simpleIcon: reactSVG },
 		{ id: 'git', simpleIcon: gitSVG },
-		{ id: 'jira', simpleIcon: jiraSVG },
 		{ id: 'github', simpleIcon: githubSVG },
-		{ id: 'visualstudiocode', simpleIcon: visualstudiocodeSVG },
-		{ id: 'figma', simpleIcon: figmaSVG },
 		{ id: 'java', simpleIcon: javaSVG },
 		{ id: 'wordpress', simpleIcon: wordpressSVG },
 		{ id: 'sql', simpleIcon: sqlSVG },
-		{ id: 'linux', simpleIcon: linuxSVG },
-		{ id: 'Netbeans', simpleIcon: netbeansSVG },
-		{ id: 'Eclipse', simpleIcon: eclipseSVG },
 	];
 	return (
 		<IconCloud
