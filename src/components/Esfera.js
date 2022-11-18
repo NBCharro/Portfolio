@@ -6,8 +6,8 @@ import reactSVG from 'simple-icons/icons/react';
 import gitSVG from 'simple-icons/icons/git';
 import githubSVG from 'simple-icons/icons/github';
 import javaSVG from 'simple-icons/icons/java';
-import wordpressSVG from 'simple-icons/icons/wordpress';
 import sqlSVG from 'simple-icons/icons/mysql';
+import php from 'simple-icons/icons/php';
 
 
 import './Esfera.module.css';
@@ -34,12 +34,12 @@ const Esfera = () => {
 	const iconTags = [
 		{ id: 'html5', simpleIcon: html5SVG },
 		{ id: 'css3', simpleIcon: css3SVG },
-		{ id: 'javascript', simpleIcon: javascriptSVG },
 		{ id: 'react', simpleIcon: reactSVG },
+		{ id: 'javascript', simpleIcon: javascriptSVG },
 		{ id: 'git', simpleIcon: gitSVG },
 		{ id: 'github', simpleIcon: githubSVG },
 		{ id: 'java', simpleIcon: javaSVG },
-		{ id: 'wordpress', simpleIcon: wordpressSVG },
+		{ id: 'php', simpleIcon: php },
 		{ id: 'sql', simpleIcon: sqlSVG },
 	];
 	return (

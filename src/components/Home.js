@@ -23,9 +23,9 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					Soy un desarrollador front-end
+					Soy desarrollador de software
 					<br />
-					Programo experiencias centradas en el usuario para alcanzar los objetivos de diseño.
+					Programo aplicaciones centradas en el usuario para alcanzar la mejor solución a cada necesidad.
 				</h1>
 			);
 		}
@@ -40,8 +40,8 @@ const Home = (props) => {
 						))}
 					</span>
 					<br />
-					I'm a front-end developer
-					<br />I program user-centered experiences to achieve design goals.
+					I am a software developer
+					<br />I program user-centered applications to achieve the best solution for each need.
 				</h1>
 			);
 		}

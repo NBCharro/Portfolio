@@ -18,7 +18,7 @@ const Contact = (props) => {
 	if (props.idioma !== 'es') {
 		formulario = {
 			titulo: 'Contact',
-			subtitulo: `If you wanna get in touch, talk about projects or just say hello, fill out the form below or click on the social media icons.`,
+			subtitulo: `If you want to get in touch with me, talk about projects or just say hello, fill in the form or click on my social media icons.`,
 			nombre: `Your Name *`,
 			email: `Your Email *`,
 			telefono: `Your Phone *`,
@@ -29,7 +29,7 @@ const Contact = (props) => {
 	if (props.idioma === 'es') {
 		formulario = {
 			titulo: 'Contacto',
-			subtitulo: `Si quieres ponerte en contacto conmigo, hablar de proyectos o simplemente saludar, rellena el formulario que aparece a continuación o pincha en los iconos de redes sociales.`,
+			subtitulo: `Si quieres ponerte en contacto conmigo, hablar de proyectos o simplemente saludar, rellena el formulario o pincha en los iconos mis redes sociales.`,
 			nombre: `Nombre *`,
 			email: `Email *`,
 			telefono: `Telefono *`,

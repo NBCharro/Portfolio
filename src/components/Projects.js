@@ -2,16 +2,22 @@ import React from "react";
 import Card from "./Card";
 import classes from './Projects.module.css';
 import Ecolegas from "../resources/ecolegas.png"
+import Beenvironment from "../resources/beenvironment.png"
 import enConstruccion from "../resources/comingSoon.png"
 import { motion } from 'framer-motion';
 
 function Projects(props) {
 	let textoEcolegas = {};
+	let textoBeenvironment = {};
 	let textoSoon = {};
 	if (props.idioma !== 'es') {
 		textoEcolegas = {
-			titulo: `Farming company website`,
+			titulo: `Frontend farming company website`,
 			parrafo: `Route, Hooks, modals, props and the EmailJS API have been used to simulate a Newsletter that is automatically sent to the entered email.`,
+		};
+		textoBeenvironment = {
+			titulo: `Backend stock control website`,
+			parrafo: `Based on HTML, CSS and JS. It is a stock control page for a beekeeping shop using PHP and MySQL.`,
 		};
 		textoSoon = {
 			titulo: `Website under construction`,
@@ -20,8 +26,12 @@ function Projects(props) {
 	}
 	if (props.idioma === 'es') {
 		textoEcolegas = {
-			titulo: `Website de empresa agricola`,
+			titulo: `Frontend website de empresa agricola`,
 			parrafo: `Se ha usado Route, Hooks, modales, props y la API EmailJS para simular una Newsletter que se envía automáticamente al email introducido.`,
+		};
+		textoBeenvironment = {
+			titulo: `Backend website de control de stock`,
+			parrafo: `Basada en HTML, CSS y JS. Se trata de una página de control de stock de una tienda de apicultura mediante PHP y MySQL.`,
 		};
 		textoSoon = {
 			titulo: `Website en construcción`,
@@ -87,10 +97,10 @@ function Projects(props) {
 				exit="exit2"
 			>
 				<Card
-					imagen={enConstruccion}
-					title={textoSoon.titulo}
-					description={textoSoon.parrafo}
-					website=""
+					imagen={Beenvironment}
+					title={textoBeenvironment.titulo}
+					description={textoBeenvironment.parrafo}
+					website="http://beenvironment.atwebpages.com/"
 				/>
 			</motion.div>
 			<motion.div
