@@ -1,0 +1,60 @@
+#inicio {
+	margin: 60px auto;
+}
+
+#nombre {
+	font-family: 'Nothing You Could Do', cursive;
+	color: #00e8fc;
+	font-size: 45px;
+	margin: 0px;
+	overflow: hidden;
+	border-right: none;
+	margin: 0;
+	letter-spacing: 0;
+}
+
+#flecha {
+	position: relative;
+	left: 50%;
+	height: 25px;
+	width: 25px;
+	border-top: 5px solid #00e8fc;
+	border-right: 5px solid #00e8fc;
+	transform: rotate(135deg);
+	animation: movimientoFlecha 2s infinite;
+}
+
+@keyframes movimientoFlecha {
+
+	0%,
+	100% {
+		transform: rotate(135deg) translateY(0px) translateX(0px);
+	}
+
+	50% {
+		transform: rotate(135deg) translateY(30px) translateX(-30px);
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
+}
+
+@media (min-width: 600px) {
+	#nombre {
+		white-space: nowrap;
+		animation: typing 4s steps(100, end);
+	}
+}
+
+@media (max-width: 600px) {
+	#nombre {
+		font-size: 8vw;
+	}
+}

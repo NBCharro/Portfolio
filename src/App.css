@@ -1,0 +1,45 @@
+.contenedor {
+	width: 75%;
+	margin: 0 auto;
+}
+
+h3 {
+	font-family: 'Indie Flower', cursive;
+	margin: 0;
+	font-size: 40px;
+	color: #00e8fc;
+	text-align: center;
+}
+
+.estiloTag {
+	font-family: 'Nothing You Could Do', cursive;
+	color: grey;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ocultar {
+	visibility: hidden;
+}
+
+.aparicion {
+	animation: entrada 2s;
+}
+
+@keyframes entrada {
+	0% {
+		transform: translateX(-500px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@media (max-width: 600px) {
+	.contenedor {
+		width: 100%;
+	}
+}

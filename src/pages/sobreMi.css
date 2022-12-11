@@ -1,0 +1,9 @@
+#sobreMi {
+	margin: 60px auto;
+}
+
+#sobreMi p:not(.estiloTag) {
+	position: relative;
+	width: 90%;
+	left: 5%;
+}

@@ -1,6 +1,6 @@
 # Portfolio
 
-Creacion de portfolio mediante ReactJS y Framer
+Creacion de portfolio mediante ReactJS
 
-version: 2.0
-date: 25 jun 2022
+version: 3.0
+date: 12 december 2022
