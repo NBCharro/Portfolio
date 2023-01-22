@@ -8,6 +8,11 @@
 	left: 5%;
 }
 
+#contacto #email {
+	font-size: 1.1em;
+	color: #00e8fc;
+}
+
 input,
 textarea {
 	border: none;

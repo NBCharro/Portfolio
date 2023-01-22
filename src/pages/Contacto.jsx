@@ -21,7 +21,7 @@ function Contacto() {
 			<h3>Contacto</h3>
 			<p className='estiloTag'>{'</h3>'}</p>
 			<p className='estiloTag'>{'</p>'}</p>
-			<p>Si quieres ponerte en contacto conmigo, hablar de proyectos o simplemente saludar, rellena el formulario o pincha en los iconos mis redes sociales.</p>
+			<p>Si quieres ponerte en contacto conmigo, hablar de proyectos o simplemente saludar, rellena el formulario, pincha en los iconos mis redes sociales o mandame un email a <strong id='email'>nbcharro@gmail.com</strong></p>
 			<p className='estiloTag'>{'</p>'}</p>
 			<p className='estiloTag'>{'<form>'}</p>
 			<form ref={form} onSubmit={sendEmail}>
