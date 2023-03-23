@@ -32,10 +32,10 @@ function Proyectos() {
 				</div>
 				<div className="tarjetaIndividual">
 					<div className="contenido">
-						<h2 className="titulo">Website en construcción</h2>
-						<p className="texto">Website en construcción</p>
-						<a href="#">
-							<button className="botonEnlace" disabled>
+						<h2 className="titulo">Barberia Laravel</h2>
+						<p className="texto">Simulación de una barbería con reserva de citas, login y posibilidad de realizar compras de productos.</p>
+						<a href="https://github.com/NBCharro/barberiaLaravel" target="_blank">
+							<button className="botonEnlace">
 								Ir a la página
 							</button>
 						</a>
