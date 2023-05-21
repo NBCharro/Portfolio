@@ -1,65 +1,20 @@
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Portada from './pages/Portada.jsx'
-import Proyectos from './pages/Proyectos.jsx'
-import Conocimientos from './pages/Conocimientos.jsx'
-import SobreMi from './pages/SobreMi.jsx'
-import Contacto from './pages/Contacto.jsx'
-import './App.css'
-import { useEffect, useState } from 'react'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import AboutMe from './components/AboutMe'
+import Contact from './components/Contact'
 
 function App() {
-	// const [scroll, setScroll] = useState(0);
-	const [proyectos, setProyectos] = useState(false);
-	const [conocimientos, setConocimientos] = useState(false);
-	const [sobreMi, setSobreMi] = useState(false);
-	const [contacto, setContacto] = useState(false);
-	const [footer, setFooter] = useState(false);
-	useEffect(() => {
-		const handleScroll = event => {
-			if (window.scrollY >= 100) {
-				setProyectos(true)
-			}
-			if (window.scrollY >= 500) {
-				setConocimientos(true)
-			}
-			if (window.scrollY >= 900) {
-				setSobreMi(true)
-			}
-			if (window.scrollY >= 1300) {
-				setContacto(true)
-			}
-			if (window.scrollY >= 1800) {
-				setFooter(true)
-			}
-		};
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
 	return (
-		<>
-			<Navbar />
-			<div className='contenedor' >
-				<Portada />
-				<div className={proyectos ? 'aparicion' : 'ocultar'}>
-					<Proyectos />
-				</div>
-				<div className={conocimientos ? 'aparicion' : 'ocultar'}>
-					<Conocimientos />
-				</div>
-				<div className={sobreMi ? 'aparicion' : 'ocultar'}>
-					<SobreMi />
-				</div>
-				<div className={contacto ? 'aparicion' : 'ocultar'}>
-					<Contacto />
-				</div>
-				<div className={footer ? 'aparicion' : 'ocultar'}>
-					<Footer />
-				</div>
+		<div className="h-fit bg-gray-900 text-white bg-[url('/images/backgroundStars.png')] bg-center bg-repeat bg-fixed pb-4" >
+			<div class='md:w-11/12 mx-auto  min-w-[360px] max-w-[1200px]'>
+				<Hero />
+				<Projects />
+				<Skills />
+				<AboutMe />
+				<Contact />
 			</div>
-		</>
+		</div >
 	)
 }
 

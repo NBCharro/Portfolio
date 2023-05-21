@@ -1,24 +1,24 @@
-/* Colores:
-#00e8fc
-#000000
-#364040
-#D9FFFF
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/*Font-size:
-Titulos: 48px
-Subtitulos: 24px
-Textos: 16px
-estiloTag: 14px
-*/
+.maquina-escribir {
+	display: block;
+	width: 23ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid;
+	animation: typing 2s steps(23), blink .5s step-end infinite alternate;
+}
 
-:root {
-	font-family: 'Inconsolata', monospace;
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-	background-image: url("./assets/backgroundStars.png");
-	background-color: black;
-	font-size: 16px;
-	color: #d9ffff;
-	background-position: center;
-	overflow-x: hidden;
+@keyframes typing {
+	from {
+		width: 0
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
 }
