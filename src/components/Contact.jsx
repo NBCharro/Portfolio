@@ -1,9 +1,6 @@
 
 
 function Contact() {
-	function irA() {
-		window.open("https://github.com/NBCharro", "_blank");
-	}
 	return (
 		<section class="px-3 py-2 mx-auto">
 			<p className="text-gray-400 italic font-light text-xs py-0.5">{'</h2>'}</p>
@@ -21,9 +18,9 @@ function Contact() {
 				<a href="mailto:nbcharro@gmail.com" title="Email">
 					<img class="h-8" src="/images/social/email.png" alt="Icono de Email" />
 				</a>
-				<div class='cursor-pointer' title="Github" onClick={irA}>
+				<a href="https://github.com/NBCharro" target="_blank" title="Github">
 					<img class="h-8" src="/images/social/github.png" alt="Icono de Github" />
-				</div>
+				</a>
 				<a href="https://www.linkedin.com/in/nbcharro" target="_blank" title="LinkedIn">
 					<img class="h-8" src="/images/social/linkedin.png" alt="Icono de Linkedin" />
 				</a>
