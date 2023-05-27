@@ -27,8 +27,8 @@ function Projects() {
 								alt="Imagen de la web de nutricion con ReactJS" />
 						</picture>
 						<div class="px-4 mt-1">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nutricionista React</h5>
-							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+							<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Nutricionista React</h5>
+							<p class="mb-3 font-normal text-gray-400">
 								Landing page que fusiona funcionalidad y diseño, creada con ReactJS y Tailwind CSS para cautivar y sorprender a los visitantes
 							</p>
 						</div>
@@ -60,8 +60,8 @@ function Projects() {
 								alt="Imagen de la web de agricultura con ReactJS" />
 						</picture>
 						<div class="px-4 mt-1">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Agricultura React</h5>
-							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+							<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Agricultura React</h5>
+							<p class="mb-3 font-normal text-gray-400">
 								Proyecto utilizando Route, Hooks, props y la API EmailJS para crear una experiencia web interactiva y envolvente
 							</p>
 						</div>
@@ -93,8 +93,8 @@ function Projects() {
 								alt="Imagen de la web de la barberia hecha en Laravel" />
 						</picture>
 						<div class="px-4 mt-1">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Barberia Laravel</h5>
-							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+							<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Barberia Laravel</h5>
+							<p class="mb-3 font-normal text-gray-400">
 								Utiliza la potencia de Laravel para crear una página web de una barbería, mientras que Bootstrap 5 asegura un diseño moderno y responsive
 							</p>
 						</div>
@@ -125,8 +125,8 @@ function Projects() {
 								alt="Website de la API de alimentos" />
 						</picture>
 						<div class="px-4 mt-1">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">API de alimentos</h5>
-							<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+							<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">API de alimentos</h5>
+							<p class="mb-3 font-normal text-gray-400">
 								Desarrollada en Typescript y documentada utilizando Swagger para una fácil comprensión e integración con otras aplicaciones
 							</p>
 						</div>
