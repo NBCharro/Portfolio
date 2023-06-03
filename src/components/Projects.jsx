@@ -99,7 +99,7 @@ function Projects() {
 							</p>
 						</div>
 						<div class="flex flex-nowrap justify-around lg:flex-wrap pb-4 lg:pb-2">
-							<button disabled target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-400 rounded-lg lg:my-2 bg-gray-700 border-2 border-gray-400">
+							<button href="https://www.barberialaravel.ovh/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-400 rounded-lg lg:my-2 bg-gray-700 border-2 border-gray-400">
 								Visitar pagina
 							</button>
 							<a href="https://github.com/NBCharro/barberiaLaravel" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-primary text-black rounded-lg hover:bg-secondary border-2 border-primary hover:border-white lg:my-2">
