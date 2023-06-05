@@ -15,9 +15,9 @@ function Contact() {
 			<p className="text-gray-400 italic font-light text-xs py-0.5">{'</p>'}</p>
 			<p className="text-gray-400 italic font-light text-xs py-0.5">{'<div>'}</p>
 			<div class='flex justify-around'>
-				<a href="mailto:nbcharro@gmail.com" title="Email">
-					<img class="h-8" src="/images/social/email.png" alt="Icono de Email" />
-				</a>
+				{/* <a href="mailto:nbcharro@gmail.com" title="Email"> */}
+				<img class="h-8" src="/images/social/email.png" alt="Icono de Email" />
+				{/* </a> */}
 				<a href="https://github.com/NBCharro" target="_blank" title="Github">
 					<img class="h-8" src="/images/social/github.png" alt="Icono de Github" />
 				</a>
