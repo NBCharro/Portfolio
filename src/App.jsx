@@ -6,8 +6,8 @@ import Contact from './components/Contact'
 
 function App() {
 	return (
-		<div className="h-fit bg-gray-900 text-white bg-[url('/images/backgroundStars.png')] bg-center bg-repeat bg-fixed pb-4" >
-			<div class='md:w-11/12 mx-auto  min-w-[360px] max-w-[1200px]'>
+		<div className="h-fit bg-gray-900 text-white bg-[url('/images/backgroundStars.png')] bg-center bg-repeat bg-fixed pb-4 min-w-[360px]" >
+			<div className='md:w-11/12 mx-auto min-w-[360px] max-w-[1200px]'>
 				<Hero />
 				<Projects />
 				<Skills />

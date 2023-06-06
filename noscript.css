@@ -1,0 +1,38 @@
+/* Javascript desactivado */
+#JSdesactivado {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	padding: 20px;
+}
+
+#JSdesactivado h1 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+#JSdesactivado p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#JSdesactivado .social-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#JSdesactivado .social-links a {
+	display: inline-block;
+	margin: 0 10px;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 8px 16px;
+	background-color: #007bff;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+#JSdesactivado .social-links a:hover {
+	background-color: #0056b3;
+}

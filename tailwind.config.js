@@ -12,7 +12,7 @@ export default {
 		extend: {
 			colors: {
 				primary: '#00e8fc',
-				secondary: '#dda0dd',
+				secondary: '#0077b6',
 				parrafo: '#fafafa',
 			},
 			animation: {

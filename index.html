@@ -10,12 +10,31 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nothing+You+Could+Do&family=Indie+Flower&display=swap"
 		rel="stylesheet" />
+	<link rel="stylesheet" href="noscript.css">
 	<title>NBCharro</title>
 </head>
 
 <body>
 	<div id="root"></div>
+	<!-- Si tiene habilidado Javascript -->
 	<script type="module" src="/src/main.jsx"></script>
+	<!-- Si no tiene habilidado Javascript -->
+	<noscript>
+		<div id="JSdesactivado">
+			<h2>Para disfrutar de la experiencia completa, habilita JavaScript en tu navegador.</h2>
+			<h1>Nelson Blanco Charro</h1>
+			<p>Desarrollador de Software</p>
+			<div class="social-links">
+				<a href="mailto:tuemail@example.com" title="Email">Email</a>
+				<a href="https://github.com/tucuenta" target="_blank" title="GitHub">GitHub</a>
+				<a href="https://www.linkedin.com/in/tucuenta" target="_blank" title="LinkedIn">LinkedIn</a>
+				<a href="https://twitter.com/tucuenta" target="_blank" title="Twitter">Twitter</a>
+				<a href="https://wa.me/tunumerodetelefono" target="_blank" title="WhatsApp">WhatsApp</a>
+				<a href="/doc/nelsonblancocharro.pdf" download title="Descargar curriculum">Descargar CV
+				</a>
+			</div>
+		</div>
+	</noscript>
 </body>
 
 </html>
