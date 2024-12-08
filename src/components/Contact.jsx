@@ -24,9 +24,6 @@ function Contact() {
 				<a href="https://www.linkedin.com/in/nbcharro" target="_blank" title="LinkedIn">
 					<img className="h-8" src="/images/social/linkedin.png" alt="Icono de Linkedin" />
 				</a>
-				<a href="https://twitter.com/nbcharro" target="_blank" title="Twitter" >
-					<img className="h-8" src="/images/social/twitter.png" alt="Icono de Twitter" />
-				</a>
 				<a href="https://wa.me/34614243007" target="_blank" title="Whatsapp">
 					<img className="h-8" src="/images/social/whatsapp.png" alt="Icono de Whatsapp" />
 				</a>
